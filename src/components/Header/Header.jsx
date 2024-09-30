@@ -35,7 +35,7 @@ export const Header = () => {
   return (
     <>
       <nav className="bg-white h-auto relative">
-        <div className="container-nav flex flex-row justify-between w-11/12 max-w-7xl m-auto py-2 items-center md:py-5 ">
+        <div className="container-nav flex flex-row justify-between w-11/12 max-w-7xl m-auto  items-center  ">
           <a className="logo-header" href="/">
             <img src={Logo} alt="" className="w-40 md:w-48" />
           </a>
@@ -65,7 +65,7 @@ export const Header = () => {
                   </a>
                 </li>
               ))}
-              <ContactButton bg="bg-rose-300 " />
+              <ContactButton bg="bg-rose-300 " classList={`mt-12 md:mt-0`} />
             </ul>
           </div>
 

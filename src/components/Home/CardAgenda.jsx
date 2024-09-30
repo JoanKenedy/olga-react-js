@@ -31,9 +31,12 @@ export const CardAgenda = () => {
             {Agenda.map((el, index) => (
               <li
                 key={index}
-                className=" item-agenda flex flex-col justify-center items-center gap-2 border border-slate-300 rounded-lg p-5 md:p-12"
+                className=" item-agenda flex flex-col justify-center items-center gap-2 border border-slate-300 rounded-lg p-10 md:p-12"
               >
-                <img src={el.Icon} alt="" className="w-16" />
+                <div className="box-icon h-[90px] w-[90px] flex justify-center items-center ">
+                  <img src={el.Icon} alt="" className="w-16" />
+                </div>
+
                 <h2>{el.Title}</h2>
                 <p className="text-justify text-sm">{el.text}</p>
               </li>

@@ -43,7 +43,7 @@ html {
   scroll-behavior: smooth;
 }
 .hero-inicio {
-  height: 600px;
+  height: 470px;
 }
 .hr-div {
   height: 1px;
@@ -135,11 +135,29 @@ h1 {
 .item-agenda:hover {
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
 }
+.box-icon {
+  border-radius: 50%;
+  background-color: #6758f31a;
+}
+.color-text {
+  color: #af7768;
+}
+.color-btn {
+  background-color: #af7768;
+}
+.container-benefits {
+  background: rgb(249, 214, 213);
+  background: linear-gradient(
+    63deg,
+    rgba(249, 214, 213, 1) 0%,
+    rgba(251, 227, 227, 1) 35%
+  );
+}
 
 @media (min-width: 376px) {
   .item-hero-inicio {
     position: absolute;
-    top: 60px;
+    top: 50px;
   }
   h1 {
     padding-right: 140px;
@@ -149,7 +167,7 @@ h1 {
 @media (min-width: 767px) {
   .item-hero-inicio {
     position: relative;
-    top: auto;
+    margin-top: -80px;
   }
   h1 {
     padding-right: 0px;
@@ -178,5 +196,9 @@ h1 {
 @media (min-width: 1400px) {
   .hero-inicio {
     height: 920px;
+  }
+  .item-hero-inicio {
+    position: relative;
+    margin-top: -140px;
   }
 }

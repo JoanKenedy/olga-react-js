@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Back from "../../assets/bg-principal.jpg";
+import Back from "../../assets/bg-principal.png";
 import BackCel from "../../assets/back-cel.png";
 
 export const Hero = () => {
@@ -29,19 +29,19 @@ export const Hero = () => {
     >
       <div className="container-hero-inicio w-[90%] m-auto relative md:max-w-7xl md:grid md:grid-cols-2 md:h-[420px]">
         <div className="item-hero-inicio ">
-          <h1 className="text-white text-base md:uppercase md:text-xl md:mb-4 ">
+          <h1 className="color-text text-base md:uppercase md:text-xl md:mb-4 ">
             Welcome our Medical Care Center
           </h1>
-          <h2 className="text-white text-lg font-bold md:text-6xl md:mb-4 ">
+          <h2 className="color-text text-lg font-bold md:text-6xl md:mb-4 ">
             Take Care of Your Healt
           </h2>
-          <p className="text-inicio text-white text-xs text-left md:mb-4 md:leading-7 ">
+          <p className="text-inicio color-text text-xs text-left md:mb-4 md:leading-7 ">
             We're always available for our Patients with emergent problems. You
             can easily reach us 24/7 via the phone number below:
           </p>
           <a
             href=""
-            className="bg-white rounded-2xl text-sm text-black px-3 py-2 inline-block my-3 md:w-[180px] text-center md:py-3 md:text-lg md:hover:scale-95 duration-75"
+            className="color-btn text-white rounded-2xl text-sm px-3 py-2 inline-block my-3 md:w-[180px] text-center md:py-3 md:text-lg md:hover:scale-95 duration-75"
           >
             Our Services
           </a>
