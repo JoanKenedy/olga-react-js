@@ -1,5 +1,5 @@
-import Materno from "../../assets/embrion.png";
-import Gine from "../../assets/examen-pelvico.png";
+import Materno from "../../assets/mother.gif";
+import Gine from "../../assets/uterus.gif";
 import Embarazo from "../../assets/embarazo-riesgo.png";
 import Control from "../../assets/control-prenatal.png";
 import Ultrasonido1 from "../../assets/ultrasonido-1.png";
@@ -139,7 +139,7 @@ export const Services = () => {
                 {MATERNO.map((serv, i) => (
                   <li
                     key={i}
-                    className="flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full  md:border-2 md: border-slate-200 md:rounded-lg"
+                    className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full  md:border-2 md: border-slate-200 md:rounded-lg md:hover:scale-95 md:duration-150"
                   >
                     <img src={serv.Icon} alt="" className="w-[50px]" />
                     <h3 className="text-xs text-center">{serv.title}</h3>
@@ -169,11 +169,11 @@ export const Services = () => {
                 openDrow2 ? "block" : "hidden"
               } item-title-services md:block `}
             >
-              <ul className="grid grid-cols-2 place-items-center w-full md:grid-cols-3 md:p-3 md:gap-2">
+              <ul className=" grid grid-cols-2 place-items-center w-full md:grid-cols-3 md:p-3 md:gap-2">
                 {GINECOLOGIA.map((serv, i) => (
                   <li
                     key={i}
-                    className="flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full md:border-2 md:border-slate-200 md:rounded-lg"
+                    className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full md:border-2 md:border-slate-200 md:rounded-lg md:hover:scale-95 md:duration-150"
                   >
                     <img src={serv.Icon} alt="" className="w-[50px]" />
                     <h3 className="text-xs text-center">{serv.title}</h3>

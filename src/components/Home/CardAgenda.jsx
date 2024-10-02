@@ -1,26 +1,26 @@
-import Doctor from "../../assets/doctor.png";
-import Phone from "../../assets/ring-phone.png";
-import Urgencia from "../../assets/alarma.png";
+import Doctor from "../../assets/doctor.gif";
+import Phone from "../../assets/call.gif";
+import Urgencia from "../../assets/alarma.gif";
 
 export const CardAgenda = () => {
   const Agenda = [
     {
       id: 1,
       Icon: Doctor,
-      Title: "Qualified Doctors",
-      text: "Lorem ipsum dolor sit amet consectet adipis sed do eiusmod tempor inc ididunt utid labore.",
+      Title: "Agendar cita",
+      text: "El primer paso para una sonrisa espectacular es agendar tu comsulta",
     },
     {
       id: 2,
-      Icon: Phone,
-      Title: "24 Hours Service",
-      text: "Lorem ipsum dolor sit amet consectet adipis sed do eiusmod tempor inc ididunt utid labore.",
+      Icon: Urgencia,
+      Title: "Nuestros tratamientos",
+      text: "Explora los servicios y tratamientos con nuestra especialista",
     },
     {
       id: 3,
-      Icon: Urgencia,
-      Title: "Need Emergency",
-      text: "Lorem ipsum dolor sit amet consectet adipis sed do eiusmod tempor inc ididunt utid labore.",
+      Icon: Phone,
+      Title: "Si tienes dudas contáctanos",
+      text: "No lo dudes estamos para servirte y darte la mejor atención",
     },
   ];
   return (
@@ -34,11 +34,11 @@ export const CardAgenda = () => {
                 className=" item-agenda flex flex-col justify-center items-center gap-2 border border-slate-300 rounded-lg p-10 md:p-12"
               >
                 <div className="box-icon h-[90px] w-[90px] flex justify-center items-center ">
-                  <img src={el.Icon} alt="" className="w-16" />
+                  <img src={el.Icon} alt="" className="w-20" />
                 </div>
 
                 <h2>{el.Title}</h2>
-                <p className="text-justify text-sm">{el.text}</p>
+                <p className="text-center text-sm">{el.text}</p>
               </li>
             ))}
           </ul>

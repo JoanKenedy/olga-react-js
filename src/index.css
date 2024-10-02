@@ -137,7 +137,6 @@ h1 {
 }
 .box-icon {
   border-radius: 50%;
-  background-color: #6758f31a;
 }
 .color-text {
   color: #af7768;
@@ -145,13 +144,35 @@ h1 {
 .color-btn {
   background-color: #af7768;
 }
-.container-benefits {
+.container-benefits,
+#testimonios {
   background: rgb(249, 214, 213);
   background: linear-gradient(
     63deg,
     rgba(249, 214, 213, 1) 0%,
     rgba(251, 227, 227, 1) 35%
   );
+}
+.footer {
+  background: rgb(251, 227, 227);
+  background: linear-gradient(
+    180deg,
+    rgba(251, 227, 227, 1) 0%,
+    rgba(249, 214, 213, 1) 37%,
+    rgba(246, 200, 199, 0.9920343137254902) 57%
+  );
+}
+.color-contacto {
+  background: rgb(215, 165, 165);
+  background: linear-gradient(
+    180deg,
+    rgba(215, 165, 165, 1) 0%,
+    rgba(204, 155, 154, 1) 61%,
+    rgba(193, 144, 144, 1) 82%
+  );
+}
+.swiper-pagination {
+  position: relative;
 }
 
 @media (min-width: 376px) {
