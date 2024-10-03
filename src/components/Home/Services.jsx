@@ -109,14 +109,17 @@ export const Services = () => {
             Especialidades
           </h2>
           <p className="text-sm">
-            Nos enfocamos en brindar atención de alta calidad, con un equipo de
-            profesionales expertos y comprometidos con tu salud y bienestar.
+            Me enfoco en brindar atención de alta calidad, con tecnología de
+            punta y mi compromiso es con tu salud y bienestar.
           </p>
+          <span className="text-xs md:hidden">
+            Da click para ver mis servicios
+          </span>
         </article>
         <article className="flex flex-col gap-2 md:grid md:grid-cols-2 md:mt-4">
           <div className="services-item w-full">
             <div
-              className="item-title border border-slate-300 rounded-xl flex  justify-around items-center py-3 bg-gray-100"
+              className="item-title border border-slate-300 rounded-xl flex  justify-around items-center py-3"
               onClick={() => setIsOpenDrow(!openDrow)}
             >
               <div className="flex items-center gap-2">
@@ -150,7 +153,7 @@ export const Services = () => {
           </div>
           <div className="services-item">
             <div
-              className="item-title border border-slate-300 rounded-xl flex  justify-around items-center py-3 bg-gray-100"
+              className="item-title border border-slate-300 rounded-xl flex  justify-around items-center py-3 "
               onClick={() => setIsOpenDrow2(!openDrow2)}
             >
               <div className="flex items-center gap-2">

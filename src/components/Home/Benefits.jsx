@@ -45,7 +45,6 @@ export const Benefits = () => {
               Nuestra Excelencia en Medicina Materno Fetal: 4 Razones para
               Elegirnos
             </h2>
-            <img src={Latidos} alt="" className="w-12  object-cover" />
 
             <ContactButton bg="color-btn" />
           </div>

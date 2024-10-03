@@ -11,24 +11,23 @@ export const AboutIndex = () => {
             <img src={About} alt="" className="rounded-lg" />
           </div>
           <div className="item-about md:flex md:justify-center md:flex-col ">
-            <h2 className="font-bold text-xl md:text-4xl">Who We Are</h2>
+            <h2 className="font-bold text-xl md:text-4xl">Sobre mi</h2>
             <img src={Latidos} alt="" className="w-12  object-cover" />
             <p className="text-sm text-slate-400 font-normal mb-3 md:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum ultrices gravida. Risus commodo viverra maecenas accumsan
-              facilisis.
+              Con una sonrisa cálida y un corazón dedicado, soy la Dra. Olga
+              Castillo, una experta en medicina materno fetal y ginecología con
+              más de 8 años de experiencia en cuidar la salud y bienestar de
+              mujeres y bebés.
             </p>
-            <ul className="flex flex-col gap-1 text-xs md:text-sm">
-              <li className=" flex items-center gap-2">
-                <BsChatHeartFill /> We provide high-quality services for the
-                whole family.
+            <ul className=" list-disc flex flex-col gap-1 pl-4 text-xs  md:text-sm ">
+              <li className=" ">Mis más de 8 años de experiencia me avalan.</li>
+              <li className="  ">
+                Con la tecnología de punta para ofrecerte un diaganostico
+                preciso.
               </li>
-              <li className=" flex items-center gap-2">
-                <BsChatHeartFill /> Risus commodo viverra maecenas
-              </li>
-              <li className=" flex items-center gap-2">
-                <BsChatHeartFill /> Your health is our top priorit
+              <li className="  ">
+                Por ultimo y mas importante, hago mi trabajo con orgullo y
+                pasión y se ve reflejado en mis pacientes.
               </li>
             </ul>
           </div>

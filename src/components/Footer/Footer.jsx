@@ -12,8 +12,8 @@ export const Footer = () => {
     },
     {
       id: 2,
-      name: "Beneficios",
-      link: "#beneficios",
+      name: "Sobre mí",
+      link: "#sobremi",
     },
     {
       id: 3,
@@ -22,52 +22,67 @@ export const Footer = () => {
     },
     {
       id: 4,
-      name: "Academy",
-      link: "https://academy.dentarios.com.mx/",
+      name: "Promociones",
+      link: "#promociones",
     },
     {
       id: 5,
-      name: "Testimonios",
-      link: "#testimonios",
+      name: "Contacto",
+      link: "https://api.whatsapp.com/send?phone=525575791467",
     },
   ];
   const Features = [
     {
       id: 1,
-      name: "Gestión de redes sociales",
+      name: "Embarazo de alto riesgo",
       link: "#servicios",
     },
     {
       id: 2,
-      name: "Posicionamiento ",
+      name: "Control prenatal ",
       link: "#servicios",
     },
     {
       id: 3,
-      name: "Desarrollo Web",
+      name: "Ultrasonido de primer trimestre",
       link: "#servicios",
     },
     {
       id: 4,
-      name: "Producción de Contenido",
+      name: "Ultrasonido de segundo trimestre",
       link: "#servicios",
     },
     {
-      id: 4,
-      name: "Publicidad en Google Ads",
+      id: 5,
+      name: "Parto/ Cesárea",
       link: "#servicios",
     },
   ];
   const Helps = [
     {
       id: 1,
-      name: "Contacto",
+      name: "Ultrasonido de tercer trimestre",
       link: "https://api.whatsapp.com/send?phone=525575791467",
     },
     {
       id: 2,
-      name: "Paquetes",
-      link: "#paquetes",
+      name: "Check up",
+      link: "#servicios",
+    },
+    {
+      id: 3,
+      name: "Consulta Ginecológica",
+      link: "#servicios",
+    },
+    {
+      id: 4,
+      name: "Papanicolaou",
+      link: "#servicios",
+    },
+    {
+      id: 5,
+      name: "Vacuna contra el VPH",
+      link: "#servicios",
     },
   ];
   return (
@@ -77,8 +92,8 @@ export const Footer = () => {
           <div className="item-footer flex flex-col gap-4 ">
             <img src={Logo} alt="" className="max-w-52" />
             <p className="color-text text-sm">
-              Brindamos soluciones personalizadas adaptadas a las necesidades y
-              objetivos únicos de nuestros clientes.
+              Nuestro compromiso es brindarte una atención excepcional, con
+              calidez y profesionalismo.
             </p>
             <div className="link-redes-foote flex gap-3">
               <a href="">
@@ -118,7 +133,7 @@ export const Footer = () => {
           </div>
           <div className="item-footer ml-0 md:flex md:flex-col md:items-center">
             <h4 className="font-semibold color-text text-sm md:text-base">
-              Ayuda
+              Más servicios
             </h4>
             <ul className="menu-footer flex justify-start flex-col md:gap-3">
               {Helps.map((help, index) => (
@@ -135,7 +150,7 @@ export const Footer = () => {
        m-auto p-2 "
         >
           <p className="text-xs color-text font-light">
-            @2024 Dentarios. Todos los derechos reservados
+            @2024 Olga Castillo. Todos los derechos reservados
           </p>
           <div className="terminos flex gap-5">
             <a href="" className="text-xs color-text font-light">

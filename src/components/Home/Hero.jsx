@@ -28,22 +28,22 @@ export const Hero = () => {
       id="inicio"
     >
       <div className="container-hero-inicio w-[90%] m-auto relative md:max-w-7xl md:grid md:grid-cols-2 md:h-[420px]">
-        <div className="item-hero-inicio ">
-          <h1 className="color-text text-base md:uppercase md:text-xl md:mb-4 ">
-            Welcome our Medical Care Center
+        <div className="item-hero-inicio flex flex-col gap-2 ">
+          <h1 className="color-text text-sm md:uppercase md:text-xl md:mb-4 ">
+            Bienvenidos a Medicina Materno Fetal Dra. Olga Castillo
           </h1>
-          <h2 className="color-text text-lg font-bold md:text-6xl md:mb-4 ">
-            Take Care of Your Healt
+          <h2 className="color-text text-lg font-bold phrase md:text-6xl md:mb-4 ">
+            Cuidamos de ti, cuidamos de tu bebé.
           </h2>
           <p className="text-inicio color-text text-xs text-left md:mb-4 md:leading-7 ">
-            We're always available for our Patients with emergent problems. You
-            can easily reach us 24/7 via the phone number below:
+            Ofrezco servicios de medicina materno fetal y ginecología de alta
+            calidad, comprometidos con tu salud y bienestar.
           </p>
           <a
             href=""
-            className="color-btn text-white rounded-2xl text-sm px-3 py-2 inline-block my-3 md:w-[180px] text-center md:py-3 md:text-lg md:hover:scale-95 duration-75"
+            className="color-btn w-[150px]  text-white rounded-2xl text-sm px-3 py-2 inline-block my-3 md:w-[180px] text-center md:py-3 md:text-lg md:hover:scale-95 duration-75"
           >
-            Our Services
+            Servicios
           </a>
         </div>
         <div className="item-hero-inicio hidden md:block"></div>

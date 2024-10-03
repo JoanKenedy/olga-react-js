@@ -127,7 +127,11 @@ html {
   top: 40px;
 }
 h1 {
-  padding-right: 80px;
+  padding-right: 60px;
+}
+.phrase {
+  padding-right: 70px;
+  line-height: 20px;
 }
 .text-inicio {
   padding-right: 100px;
@@ -214,17 +218,61 @@ h1 {
 .item-galery:nth-child(9) {
   grid-area: Foto9;
 }
+.container-call-to-action {
+  border-radius: 10px;
+  box-shadow: 12px 11px 5px -5px rgba(193, 144, 144, 0.57);
+}
 
-@media (min-width: 376px) {
+@media (min-width: 375px) {
   .item-hero-inicio {
     position: absolute;
     top: 50px;
   }
   h1 {
-    padding-right: 140px;
+    padding-right: 105px;
+  }
+  .phrase {
+    padding-right: 100px;
+    line-height: 20px;
+  }
+  .text-inicio {
+    padding-right: 115px;
   }
 }
-
+@media (min-width: 381px) {
+  .item-hero-inicio {
+    position: absolute;
+    top: 50px;
+  }
+  h1 {
+    padding-right: 105px;
+  }
+  .phrase {
+    padding-right: 118px;
+    line-height: 20px;
+  }
+  .text-inicio {
+    padding-right: 150px;
+  }
+}
+@media (min-width: 401px) {
+  .phrase {
+    padding-right: 128px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 411px) {
+  h1 {
+    padding-right: 115px;
+  }
+  .phrase {
+    padding-right: 138px;
+    line-height: 20px;
+  }
+  .text-inicio {
+    padding-right: 150px;
+  }
+}
 @media (min-width: 767px) {
   .item-hero-inicio {
     position: relative;
@@ -246,6 +294,8 @@ h1 {
   }
   .container-call-to-action {
     border-radius: 10px;
+
+    box-shadow: 12px 11px 5px -5px rgba(193, 144, 144, 0.57);
   }
   #zoid-paypal-buttons-uid_69c4129051_mda6mda6ndy {
     width: 250px !important;
@@ -255,11 +305,44 @@ h1 {
   }
   .container-galery {
     display: grid;
-    grid-gap: 7px;
-    grid-template-areas:
-      "Foto4 Foto5 Foto6"
-      "Foto1 Foto2 Foto3"
-      "Foto7 Foto8 Foto9";
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .item-galery:nth-child(1) {
+    grid-column: 1/2;
+  }
+  .item-galery:nth-child(2) {
+    grid-column: 3/4;
+    grid-row: 3/5;
+  }
+  .item-galery:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+  .item-galery:nth-child(4) {
+    grid-column: 2/3;
+  }
+  .item-galery:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .item-galery:nth-child(6) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .item-galery:nth-child(7) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .item-galery:nth-child(8) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .item-galery:nth-child(9) {
+    grid-column: 1/2;
+    grid-row: 4/5;
   }
 }
 @media (min-width: 1400px) {

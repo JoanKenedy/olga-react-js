@@ -13,8 +13,8 @@ export const Header = () => {
     },
     {
       id: 2,
-      name: "Beneficios",
-      link: "#beneficios",
+      name: "Sobre mí",
+      link: "#sobremi",
     },
     {
       id: 3,
@@ -23,13 +23,8 @@ export const Header = () => {
     },
     {
       id: 4,
-      name: "Academy",
-      link: "https://academy.dentarios.com.mx/",
-    },
-    {
-      id: 5,
-      name: "Testimonios",
-      link: "#testimonios",
+      name: "Promociones",
+      link: "#promociones",
     },
   ];
   return (
