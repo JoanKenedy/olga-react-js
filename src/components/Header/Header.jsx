@@ -9,17 +9,17 @@ export const Header = () => {
     {
       id: 1,
       name: "Inicio",
-      link: "#inicio",
+      link: "/",
     },
     {
       id: 2,
       name: "Sobre mí",
-      link: "#sobremi",
+      link: "/sobre-mi",
     },
     {
       id: 3,
       name: "Servicios",
-      link: "#servicios",
+      link: "/servicios",
     },
     {
       id: 4,
