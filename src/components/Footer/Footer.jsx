@@ -1,4 +1,4 @@
-import Logo from "../../assets/images/logo_header.png";
+import Logo from "../../assets/logo_header.png";
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaTiktok } from "react-icons/fa";

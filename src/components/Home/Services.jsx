@@ -108,7 +108,7 @@ export const Services = () => {
           <h2 className="text-2xl mb-2 font-semibold md:text-5xl ">
             Especialidades
           </h2>
-          <p className="text-sm">
+          <p className="text-sm md:text-base">
             Me enfoco en brindar atención de alta calidad, con tecnología de
             punta y mi compromiso es con tu salud y bienestar.
           </p>

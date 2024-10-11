@@ -1,7 +1,9 @@
+import { Hero } from "../components/SobreMi/Hero";
+
 export const SobreMi = () => {
   return (
     <>
-      <h2>Sobre mí</h2>
+      <Hero />
     </>
   );
 };

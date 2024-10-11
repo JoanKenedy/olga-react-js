@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../../assets/images/logo_header.png";
+import Logo from "../../assets/logo_header.png";
 import { RiCloseLargeLine } from "react-icons/ri";
 import { ContactButton } from "../ContactButton";
 

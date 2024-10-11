@@ -8,7 +8,7 @@ export const CardAgenda = () => {
       id: 1,
       Icon: Doctor,
       Title: "Agendar cita",
-      text: "El primer paso para una sonrisa espectacular es agendar tu comsulta",
+      text: "El primer paso para una vida plena es agendar consulta",
     },
     {
       id: 2,
