@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Back from "../../assets/sobre.png";
-import BackCel from "../../assets/back-cel.png";
+import BackCel from "../../assets/sobre-cel.png";
 export const Hero = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const mobile = 768;
