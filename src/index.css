@@ -148,6 +148,9 @@ h1 {
 .color-btn {
   background-color: #af7768;
 }
+.item-history {
+  background: rgb(249, 214, 213);
+}
 .container-benefits,
 #testimonios {
   background: rgb(249, 214, 213);
@@ -237,10 +240,25 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
+  margin: auto;
   display: block;
   border-radius: 50%;
   animation: st-video-animation 2s linear infinite;
-  background-color: #fff;
+  box-shadow: 0 0 0 11px rgba(255, 255, 255, 0.7);
+}
+.st-video-animation span {
+  position: absolute;
+  top: 0;
+  width: 92px;
+  height: 91px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+  animation: st-video-animation 2s linear infinite;
+  box-shadow: 0 0 0 11px rgba(255, 255, 255, 0.7);
 }
 
 @keyframes st-video-animation {
@@ -378,6 +396,30 @@ h1 {
   .item-galery:nth-child(9) {
     grid-column: 1/2;
     grid-row: 4/5;
+  }
+  .container-video {
+    border-radius: 50% 7px 50% 50% !important;
+    box-shadow: 7px 2px 7px rgba(0, 0, 0, 0.2);
+  }
+  .linea {
+    left: 50%;
+    height: 400px;
+    animation: linea 3s linear 3;
+  }
+  @keyframes linea {
+    0% {
+      height: 0;
+      opacity: 0;
+    }
+    25% {
+      height: 150px;
+      opacity: 0.75;
+    }
+
+    100% {
+      height: 400px;
+      opacity: 1;
+    }
   }
 }
 @media (min-width: 1400px) {

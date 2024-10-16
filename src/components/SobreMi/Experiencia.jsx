@@ -49,7 +49,7 @@ export const Experiencia = () => {
           </ul>
           <article className="">
             <div
-              className=" w-full bg-cover bg-no-repeat md:flex md:justify-center h-[280px] relative md:h-[500px]"
+              className="container-video w-full bg-cover bg-no-repeat md:flex md:justify-center h-[280px] relative md:h-[500px]"
               style={{
                 backgroundImage: `url(${FondoVideo})`,
               }}
@@ -59,7 +59,7 @@ export const Experiencia = () => {
                 className="video-play"
               >
                 <img src={BtnVideo} alt="" className="w-[90px]" />
-                <span className="st-video-animation">
+                <span className="st-video-animation ">
                   <span></span>
                 </span>
               </a>
