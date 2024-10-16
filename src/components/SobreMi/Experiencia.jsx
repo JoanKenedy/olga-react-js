@@ -1,7 +1,7 @@
 import Bag from "../../assets/experiencia.png";
 import Feliz from "../../assets/pacientes.png";
 import Doctora from "../../assets/doctor.png";
-import Hospital from "../../assets/Hospital.png";
+import Hospital from "../../assets/hospital.png";
 import FondoVideo from "../../assets/video-block-img.jpg";
 import BtnVideo from "../../assets/boton-de-play.png";
 export const Experiencia = () => {
