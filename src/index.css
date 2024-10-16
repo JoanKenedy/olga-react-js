@@ -276,6 +276,28 @@ h1 {
     opacity: 0;
   }
 }
+.linea {
+  position: absolute;
+  left: 0%;
+  width: 3px;
+  height: 570px;
+  animation: linea 2s linear 2;
+}
+@keyframes linea {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  25% {
+    height: 250px;
+    opacity: 0.75;
+  }
+
+  100% {
+    height: 570px;
+    opacity: 1;
+  }
+}
 @media (min-width: 375px) {
   .item-hero-inicio {
     position: absolute;
@@ -404,7 +426,7 @@ h1 {
   .linea {
     left: 50%;
     height: 400px;
-    animation: linea 3s linear 3;
+    animation: linea 2s linear 2;
   }
   @keyframes linea {
     0% {
