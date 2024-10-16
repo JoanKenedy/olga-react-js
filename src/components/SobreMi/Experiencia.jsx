@@ -10,7 +10,7 @@ export const Experiencia = () => {
       <section className="bg-slate-100 w-full">
         <div className="container-experiencia w-[95%] m-auto py-8  md:grid md:grid-cols-2 md:gap-8 md:max-w-6xl md:py-14">
           <ul className="grid gap-8 md:grid-cols-2 ">
-            <li className="flex items-center justify-center flex-col border border-gray-300 rounded-lg py-[30px] px-[20px] gap-2 bg-white shadow-lg">
+            <li className="flex items-center justify-center flex-col border border-gray-300 rounded-lg py-[40px] px-[20px] gap-2 bg-white shadow-lg">
               <div className="bg-zinc-200 w-[70px] h-[70px] rounded-full flex justify-center items-center md:w-[90px] md:h-[90px]">
                 <img src={Bag} alt="" className="w-[40px] md:w-[50px] " />
               </div>
@@ -19,7 +19,7 @@ export const Experiencia = () => {
                 Años de experiencia
               </p>
             </li>
-            <li className="flex items-center justify-center flex-col border border-gray-300 rounded-lg py-[30px] px-[20px] gap-2 bg-white shadow-lg">
+            <li className="flex items-center justify-center flex-col border border-gray-300 rounded-lg py-[40px] px-[20px] gap-2 bg-white shadow-lg">
               <div className="bg-zinc-200 w-[70px] h-[70px] rounded-full flex justify-center items-center md:w-[90px] md:h-[90px]">
                 <img src={Feliz} alt="" className="w-[40px] md:w-[50px] " />
               </div>
@@ -28,7 +28,7 @@ export const Experiencia = () => {
                 Pacientes felices
               </p>
             </li>
-            <li className="flex items-center justify-center flex-col border border-gray-300 rounded-lg py-[30px] px-[20px] gap-2 bg-white shadow-lg">
+            <li className="flex items-center justify-center flex-col border border-gray-300 rounded-lg py-[40px] px-[20px] gap-2 bg-white shadow-lg">
               <div className="bg-zinc-200 w-[70px] h-[70px] rounded-full flex justify-center items-center md:w-[90px] md:h-[90px]">
                 <img src={Doctora} alt="" className="w-[40px] md:w-[50px] " />
               </div>
@@ -37,7 +37,7 @@ export const Experiencia = () => {
                 Calificación de doctora
               </p>
             </li>
-            <li className="flex items-center justify-center flex-col border border-gray-300 rounded-lg py-[30px] px-[20px] gap-2 bg-white shadow-lg">
+            <li className="flex items-center justify-center flex-col border border-gray-300 rounded-lg py-[40px] px-[20px] gap-2 bg-white shadow-lg">
               <div className="bg-zinc-200 w-[70px] h-[70px] rounded-full flex justify-center items-center md:w-[90px] md:h-[90px]">
                 <img src={Hospital} alt="" className="w-[40px] md:w-[50px] " />
               </div>
@@ -47,7 +47,7 @@ export const Experiencia = () => {
               </p>
             </li>
           </ul>
-          <article className="">
+          <article className="mt-5">
             <div
               className="container-video w-full bg-cover bg-no-repeat md:flex md:justify-center h-[280px] relative md:h-[500px]"
               style={{
