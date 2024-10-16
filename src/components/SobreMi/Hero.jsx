@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Back from "../../assets/bg-principal.png";
+import Back from "../../assets/sobre.png";
 import BackCel from "../../assets/back-cel.png";
 export const Hero = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -36,9 +36,7 @@ export const Hero = () => {
               Ahora conocéme un poco más
             </h2>
             <p className="text-inicio color-text text-xs text-left md:mb-4 md:leading-7 ">
-              Con una sonrisa cálida y un corazón dedicado, soy la Dra. Olga
-              Castillo. <br />
-              Mis más de 8 años de experiencia me avalan.
+              Con una pasión por brindar atención de calidad a mujeres y bebés.
             </p>
             <a
               href=""

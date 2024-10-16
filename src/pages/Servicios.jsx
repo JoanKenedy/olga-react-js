@@ -1,7 +1,9 @@
+import { Hero } from "../components/Servicios/Hero";
+
 export const Servicios = () => {
   return (
     <>
-      <h2>Servicios</h2>
+      <Hero />
     </>
   );
 };
