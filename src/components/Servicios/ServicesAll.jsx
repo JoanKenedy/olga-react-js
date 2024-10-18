@@ -5,6 +5,12 @@ import Control from "../../assets/control-prenatal.png";
 import Ultrasonido1 from "../../assets/ultrasonido-1.png";
 import Ultrasonido2 from "../../assets/ultrasonido-2.png";
 import Ultrasonido3 from "../../assets/ultrasonido-3.png";
+import Ultrasonido4 from "../../assets/4d.png";
+import DuoTest from "../../assets/duo-test.png";
+import DnaTest from "../../assets/dna-test.png";
+import Biopsia from "../../assets/biopsia.png";
+import Embarazo2 from "../../assets/embarazo.png";
+import Perfil from "../../assets/feto.png";
 import Parto from "../../assets/nacimiento.png";
 import Lista from "../../assets/lista.png";
 import Consulta from "../../assets/consulta.png";
@@ -54,8 +60,50 @@ export const ServicesAll = () => {
     },
     {
       id: 5,
+      title: "Ultrasonido 3D y 4D",
+      Icon: Ultrasonido4,
+      description:
+        "Mejora tu visibilidad online y atrae más pacientes con un perfil optimizado.",
+    },
+    {
+      id: 6,
+      title: "Duo Test",
+      Icon: DuoTest,
+      description:
+        "Mejora tu visibilidad online y atrae más pacientes con un perfil optimizado.",
+    },
+    {
+      id: 7,
+      title: "DNA fetal",
+      Icon: DnaTest,
+      description:
+        "Mejora tu visibilidad online y atrae más pacientes con un perfil optimizado.",
+    },
+    {
+      id: 8,
+      title: "Biopsia de vellosidades coriales",
+      Icon: Biopsia,
+      description:
+        "Mejora tu visibilidad online y atrae más pacientes con un perfil optimizado.",
+    },
+    {
+      id: 9,
+      title: "Amniocentesis",
+      Icon: Embarazo2,
+      description:
+        "Mejora tu visibilidad online y atrae más pacientes con un perfil optimizado.",
+    },
+    {
+      id: 10,
       title: "Parto/ Cesárea",
       Icon: Parto,
+      description:
+        "Mejora tu visibilidad online y atrae más pacientes con un perfil optimizado.",
+    },
+    {
+      id: 11,
+      title: "Perfil biofísico",
+      Icon: Perfil,
       description:
         "Mejora tu visibilidad online y atrae más pacientes con un perfil optimizado.",
     },
@@ -100,15 +148,15 @@ export const ServicesAll = () => {
   return (
     <>
       <section
-        className="w-full  flex flex-col justify-center items-center p-5 mt-0 mb-0  gap-4 md:mb-0 md:mt-4"
+        className="w-full  flex flex-col justify-center px-4 items-center  mt-0 mb-8  gap-4 md:mb-8 md:mt-4"
         id="servicios"
       >
-        <div className="w-full md:max-w-6xl grid gap-2">
+        <div className="w-full md:max-w-7xl grid gap-2  md:bg-gray-100 md:p-8">
           <article>
-            <h2 className="text-2xl mb-2 font-semibold md:text-5xl ">
+            <h2 className="text-2xl md:text-center mb-2 font-semibold md:text-5xl ">
               Todos nuestros Servicios y Especialidades
             </h2>
-            <p className="text-sm md:text-base">
+            <p className="text-sm md:text-base md:text-center">
               Ofrezco servicios de alta calidad, basados en la última tecnología
               y la experiencia más avanzda. Confíe en mi para su cuidado.
             </p>
@@ -119,7 +167,7 @@ export const ServicesAll = () => {
           <article className="flex flex-col gap-2 md:grid md:grid-cols-2 md:mt-4">
             <div className="services-item w-full">
               <div
-                className="item-title border border-slate-300 rounded-xl flex  justify-around items-center py-3"
+                className="item-title border-2 border-slate-200 bg-white rounded-xl flex  justify-around items-center py-3"
                 onClick={() => setIsOpenDrow(!openDrow)}
               >
                 <div className="flex items-center gap-2">
@@ -142,7 +190,7 @@ export const ServicesAll = () => {
                   {MATERNO.map((serv, i) => (
                     <li
                       key={i}
-                      className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full  md:border-2 md: border-slate-200 md:rounded-lg md:hover:scale-95 md:duration-150"
+                      className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full  md:border-2 md: border-slate-200 bg-white md:rounded-lg md:hover:scale-95 md:duration-150"
                     >
                       <img src={serv.Icon} alt="" className="w-[50px]" />
                       <h3 className="text-xs text-center">{serv.title}</h3>
@@ -153,7 +201,7 @@ export const ServicesAll = () => {
             </div>
             <div className="services-item">
               <div
-                className="item-title border border-slate-300 rounded-xl flex  justify-around items-center py-3 "
+                className="item-title border-2 border-slate-200 rounded-xl flex bg-white justify-around items-center py-3 "
                 onClick={() => setIsOpenDrow2(!openDrow2)}
               >
                 <div className="flex items-center gap-2">
@@ -176,7 +224,7 @@ export const ServicesAll = () => {
                   {GINECOLOGIA.map((serv, i) => (
                     <li
                       key={i}
-                      className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full md:border-2 md:border-slate-200 md:rounded-lg md:hover:scale-95 md:duration-150"
+                      className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full md:border-2 md:border-slate-200 bg-white md:rounded-lg md:hover:scale-95 md:duration-150"
                     >
                       <img src={serv.Icon} alt="" className="w-[50px]" />
                       <h3 className="text-xs text-center">{serv.title}</h3>
