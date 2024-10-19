@@ -298,6 +298,17 @@ h1 {
     opacity: 1;
   }
 }
+.respuesta {
+  font-size: 13px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.efecto {
+  height: auto;
+  max-height: 260px;
+  transition: max-height 0.5s ease;
+}
 @media (min-width: 375px) {
   .item-hero-inicio {
     position: absolute;
