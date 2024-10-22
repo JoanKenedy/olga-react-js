@@ -25,11 +25,10 @@ export const ServicesAll = () => {
   const [openDrow, setIsOpenDrow] = useState(false);
   const [openDrow2, setIsOpenDrow2] = useState(false);
   const [activo, setActivo] = useState(false);
-  
-  const handleClickE = () => {
+  const [id, setId] = useState(" ");
+  const handleActivo = (id) => {
     setActivo(true);
- 
-    
+    setId(id);
   };
   const handleEstado = (nuevoEstado) => {
     setActivo(nuevoEstado);
@@ -203,7 +202,7 @@ export const ServicesAll = () => {
                   {MATERNO.map((serv, i) => (
                     <li
                       key={i}
-                      onClick={handleClickE}
+                      onClick={(e) => handleActivo(e.target.id)}
                       id={serv.id}
                       className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full  md:border-2 md: border-slate-200 bg-white md:rounded-lg md:hover:scale-95 md:duration-150 md:gap-3"
                     >
@@ -212,15 +211,22 @@ export const ServicesAll = () => {
                         alt=""
                         className="w-[50px] md:w-[60px]"
                         id={serv.id}
-
                       />
-                      <h3 className="text-xs text-center md:text-sm " id={serv.id}>
+                      <h3
+                        className="text-xs text-center md:text-sm "
+                        id={serv.id}
+                      >
                         {serv.title}
                       </h3>
                     </li>
                   ))}
+                  <Modales
+                    activo={activo}
+                    handleEstado={handleEstado}
+                    id={id}
+                    MATERNO={[MATERNO]}
+                  />
                 </ul>
-                <Modales activo={activo} handleEstado={handleEstado}  />
               </div>
             </div>
             <div className="services-item">
