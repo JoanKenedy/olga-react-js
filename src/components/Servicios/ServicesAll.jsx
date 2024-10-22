@@ -17,11 +17,24 @@ import Consulta from "../../assets/consulta.png";
 import Papanicolau from "../../assets/papanicolau.png";
 import Colposcopia from "../../assets/colposcopio.png";
 import Vacuna from "../../assets/vacuna.png";
+
 import { FiPlusCircle } from "react-icons/fi";
 import { useState } from "react";
+import { Modales } from "./Modales";
 export const ServicesAll = () => {
   const [openDrow, setIsOpenDrow] = useState(false);
   const [openDrow2, setIsOpenDrow2] = useState(false);
+  const [activo, setActivo] = useState(false);
+  
+  const handleClickE = () => {
+    setActivo(true);
+ 
+    
+  };
+  const handleEstado = (nuevoEstado) => {
+    setActivo(nuevoEstado);
+  };
+
   const MATERNO = [
     {
       id: 0,
@@ -151,7 +164,7 @@ export const ServicesAll = () => {
         className="w-full  flex flex-col justify-center px-4 items-center  mt-0 mb-8  gap-4 md:mb-8 md:mt-4"
         id="servicios"
       >
-        <div className="w-full md:max-w-7xl grid gap-2  md:bg-gray-100 md:p-8">
+        <div className="w-full md:max-w-7xl grid gap-2  md:bg-gray-100 md:p-12">
           <article>
             <h2 className="text-2xl md:text-center mb-2 font-semibold md:text-5xl ">
               Todos nuestros Servicios y Especialidades
@@ -164,7 +177,7 @@ export const ServicesAll = () => {
               Da click para ver mis servicios
             </span>
           </article>
-          <article className="flex flex-col gap-2 md:grid md:grid-cols-2 md:mt-4">
+          <article className="flex flex-col gap-2 md:grid md:grid-cols-1 md:mt-4">
             <div className="services-item w-full">
               <div
                 className="item-title border-2 border-slate-200 bg-white rounded-xl flex  justify-around items-center py-3"
@@ -183,20 +196,31 @@ export const ServicesAll = () => {
               </div>
               <div
                 className={`${
-                  openDrow ? "block" : "hidden"
-                } item-title-services md:block `}
+                  openDrow ? "efecto2 " : " "
+                } item-title-services respuesta2 `}
               >
-                <ul className="grid grid-cols-2 md:grid-cols-3  place-items-center w-full md:p-3 md:gap-2 ">
+                <ul className="grid grid-cols-2 md:grid-cols-4  place-items-center w-full md:p-3 md:gap-2 ">
                   {MATERNO.map((serv, i) => (
                     <li
                       key={i}
-                      className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full  md:border-2 md: border-slate-200 bg-white md:rounded-lg md:hover:scale-95 md:duration-150"
+                      onClick={handleClickE}
+                      id={serv.id}
+                      className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full  md:border-2 md: border-slate-200 bg-white md:rounded-lg md:hover:scale-95 md:duration-150 md:gap-3"
                     >
-                      <img src={serv.Icon} alt="" className="w-[50px]" />
-                      <h3 className="text-xs text-center">{serv.title}</h3>
+                      <img
+                        src={serv.Icon}
+                        alt=""
+                        className="w-[50px] md:w-[60px]"
+                        id={serv.id}
+
+                      />
+                      <h3 className="text-xs text-center md:text-sm " id={serv.id}>
+                        {serv.title}
+                      </h3>
                     </li>
                   ))}
                 </ul>
+                <Modales activo={activo} handleEstado={handleEstado}  />
               </div>
             </div>
             <div className="services-item">
@@ -217,17 +241,23 @@ export const ServicesAll = () => {
               </div>
               <div
                 className={`${
-                  openDrow2 ? "block" : "hidden"
-                } item-title-services md:block `}
+                  openDrow2 ? "efecto2" : "respuesta2"
+                } item-title-services `}
               >
                 <ul className=" grid grid-cols-2 place-items-center w-full md:grid-cols-3 md:p-3 md:gap-2">
                   {GINECOLOGIA.map((serv, i) => (
                     <li
                       key={i}
-                      className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full md:border-2 md:border-slate-200 bg-white md:rounded-lg md:hover:scale-95 md:duration-150"
+                      className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full md:border-2 md:border-slate-200 bg-white md:rounded-lg md:hover:scale-95 md:duration-150 md:gap-2"
                     >
-                      <img src={serv.Icon} alt="" className="w-[50px]" />
-                      <h3 className="text-xs text-center">{serv.title}</h3>
+                      <img
+                        src={serv.Icon}
+                        alt=""
+                        className="w-[50px] md:w-[55px]"
+                      />
+                      <h3 className="text-xs text-center md:text-sm">
+                        {serv.title}
+                      </h3>
                     </li>
                   ))}
                 </ul>

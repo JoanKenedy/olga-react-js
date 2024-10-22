@@ -148,9 +148,9 @@ h1 {
 .color-btn {
   background-color: #af7768;
 }
-.item-history {
+/*.item-history {
   background: rgb(249, 214, 213);
-}
+}*/
 .container-benefits,
 #testimonios {
   background: rgb(249, 214, 213);
@@ -306,9 +306,21 @@ h1 {
 }
 .efecto {
   height: auto;
-  max-height: 260px;
+  max-height: 300px;
   transition: max-height 0.5s ease;
 }
+.respuesta2 {
+  font-size: 13px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.efecto2 {
+  height: auto;
+  max-height: 720px;
+  transition: max-height 0.5s ease;
+}
+
 @media (min-width: 375px) {
   .item-hero-inicio {
     position: absolute;
@@ -454,6 +466,12 @@ h1 {
       opacity: 1;
     }
   }
+  .respuesta2 {
+    max-height: 1000px;
+    overflow: visible;
+    transition: max-height 0.5s ease;
+  }
+  
 }
 @media (min-width: 1400px) {
   .hero-inicio {

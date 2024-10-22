@@ -26,15 +26,15 @@ export const Faqs = () => {
     },
     {
       id: 3,
-      pregunta: "¿Cuánto kilos puedo aumentar en el embarazo?",
+      pregunta: "¿Debo tener algún cuidado especial con mi ropa interior?",
       respuesta:
-        "En general se recomienda aumentar como máximo entre 9 y 12 kilos durante todo el embarazo para prevenir enfermedades y complicaciones en el parto. Esta recomendación se puede ampliar o disminuir dependiendo de tu peso al inicio del embarazo. Tu matrona o tu ginecólogo te lo indicarán en la primera consulta.",
+        "Idealmente, la ropa interior femenina debe ser de algodón. Cualquier otro material se puede utilizar solo por algunos momentos. Tampoco se recomienda usar protectores diarios, ya que dañan e irritan la piel, alterando el pH y aumentando la cantidad de flujo.",
     },
     {
       id: 4,
-      pregunta: "¿Puedo tener relaciones sexuales durante el embarazo?",
+      pregunta: "¿Hay más riesgos de infección con la edad?",
       respuesta:
-        "Si tu embarazo se está desarrollando con normalidad no es necesario que interrumpas las relaciones sexuales en ningún momento, siempre y cuando no te resulten molestas. Debes evitarlas cuando tu ginecólogo te lo indique expresamente, bien por amenaza de aborto, amenaza de parto prematuro, placenta previa, sospecha de rotura de bolsa o cualquier otro motivo que considere oportuno. Salvo contraindicación, las relaciones sexuales durante el embarazo son beneficiosas para ti y para el bebé. ",
+        "Sí. Después de la menopausia aumenta el riesgo de sufrir vulvovaginitis, ya que los cambios en el pH de la vagina y los cambios hormonales causan un desequilibrio en las bacterias de la flora vaginal. ",
     },
   ];
 
@@ -50,7 +50,7 @@ export const Faqs = () => {
               <img
                 src={FAQS}
                 alt=""
-                className="max-w-[100%] md:h-[400px] md:w-[550px] object-cover"
+                className="max-w-[100%] md:h-[400px] md:w-[550px] object-cover rounded-lg"
               />
             </div>
             <div className="item-faqs w-full  md:flex md:items-center md:justify-center ">
@@ -58,10 +58,10 @@ export const Faqs = () => {
                 {PREGUNTAS.map((item, i) => (
                   <div className="w-full">
                     <div
-                      className="flex w-full justify-between items-center text-sm md:text-base cursor-pointer item-history p-3 rounded-lg"
+                      className="flex w-full justify-between items-center text-sm md:text-base cursor-pointer bg-rose-300  item-history p-3 rounded-lg"
                       onClick={() => toogle(i)}
                     >
-                      <p>{item.pregunta}</p>
+                      <p className="text-black">{item.pregunta}</p>
                       <IoIosArrowDown
                         className={`${
                           selected == i ? "rotate-180" : "rotate-0"
@@ -70,9 +70,7 @@ export const Faqs = () => {
                     </div>
                     <p
                       className={`${
-                        selected == i
-                          ? "efecto "
-                          : "respuesta  "
+                        selected == i ? "efecto " : "respuesta  "
                       } w-full text-sm md:text-sm  mt-2  text-justify px-2`}
                     >
                       {item.respuesta}
