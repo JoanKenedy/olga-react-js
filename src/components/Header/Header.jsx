@@ -47,12 +47,11 @@ export const Header = () => {
 
               {MENU.map((data, index) => (
                 <li
-                  className="pt-14 text-white text-lg md:text-slate-900 md:pt-2 md:mx-5"
+                  className="pt-14 text-white text-xl md:text-slate-900 md:pt-2 md:mx-5"
                   key={index}
                 >
                   <a
                     href={data.link}
-                    target={data.name === "Academy" ? "_blank" : "_parent"}
                     onClick={() => setIsOpenMenu(!isOpenMenu)}
                     rel="noreferrer noopener"
                   >
@@ -60,7 +59,13 @@ export const Header = () => {
                   </a>
                 </li>
               ))}
-              <ContactButton bg="bg-rose-300 " classList={`mt-12 md:mt-0`} />
+              <a
+                href="https://api.whatsapp.com/send?phone=525575791467"
+                target="_blank"
+                className="btn-header bg-red-300 mt-12 px-4 py-2 rounded-2xl text-white text-base md:text-base md:hover:scale-95 duration-300 md:mt-0"
+              >
+                Contacto
+              </a>
             </ul>
           </div>
 

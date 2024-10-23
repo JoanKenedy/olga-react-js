@@ -326,6 +326,9 @@ h1 {
 .question {
   background-color: #e3b0b0;
 }
+.btn-header{
+  background-color: #af7768;
+} 
 
 @media (min-width: 375px) {
   .item-hero-inicio {
@@ -381,6 +384,9 @@ h1 {
   .item-hero-inicio {
     position: relative;
     margin-top: -80px;
+  }
+  .btn-header{
+    background-color: #e058a3;
   }
   h1 {
     padding-right: 0px;
@@ -456,6 +462,9 @@ h1 {
     left: 50%;
     min-height: 85%;
     animation: linea 2s linear 2;
+  }
+  .btn-header {
+   background-color: rgb(253 164 175);
   }
   @keyframes linea {
     0% {

@@ -46,7 +46,7 @@ export const Benefits = () => {
               Elegirnos
             </h2>
 
-            <ContactButton bg="color-btn" />
+            <ContactButton bg="color-btn" classList={'mt-3'} />
           </div>
           <div className="item-benefits grid gap-2 md:w-7/12 md:grid-cols-2">
             {BENEFICIOS.map((beneficio, index) => (
