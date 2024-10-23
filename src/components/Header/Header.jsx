@@ -47,7 +47,7 @@ export const Header = () => {
 
               {MENU.map((data, index) => (
                 <li
-                  className="pt-14 text-white text-xl md:text-slate-900 md:pt-2 md:mx-5"
+                  className="pt-14 uppercase text-white text-xl md:text-slate-900 md:pt-2 md:mx-5 md:capitalize"
                   key={index}
                 >
                   <a
@@ -62,7 +62,7 @@ export const Header = () => {
               <a
                 href="https://api.whatsapp.com/send?phone=525575791467"
                 target="_blank"
-                className="btn-header bg-red-300 mt-12 px-4 py-2 rounded-2xl text-white text-base md:text-base md:hover:scale-95 duration-300 md:mt-0"
+                className="btn-header uppercase bg-red-300 mt-12 px-4 py-2 rounded-2xl text-white text-base md:text-base md:hover:scale-95 duration-300 md:mt-0 md:capitalize"
               >
                 Contacto
               </a>
