@@ -280,7 +280,7 @@ h1 {
   position: absolute;
   left: 0%;
   width: 3px;
-  height: 570px;
+  min-height: 100%;
   animation: linea 2s linear 2;
 }
 @keyframes linea {
@@ -322,6 +322,9 @@ h1 {
 }
 .modalInfo {
   background-color: rgba(0, 0, 0, 0.9);
+}
+.question {
+  background-color: #e3b0b0;
 }
 
 @media (min-width: 375px) {
@@ -451,7 +454,7 @@ h1 {
   }
   .linea {
     left: 50%;
-    height: 400px;
+    min-height: 85%;
     animation: linea 2s linear 2;
   }
   @keyframes linea {

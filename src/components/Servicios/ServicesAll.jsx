@@ -42,73 +42,85 @@ export const ServicesAll = () => {
       id: 0,
       title: "Embarazo de alto riesgo",
       Icon: Embarazo,
-      description: "Este es el texto de Embarazo de alto riesgo",
+      description:
+        "El embarazo es un proceso natural y emocionante para muchas mujeres, pero en algunos casos, puede convertirse en una experiencia complicada y peligrosa tanto para la madre como para el bebé. Un embarazo de alto riesgo se refiere a aquellos casos en los que existen factores que aumentan la probabilidad de complicaciones durante el embarazo, el parto o después del nacimiento.",
     },
     {
       id: 1,
       title: "Control prenatal",
       Icon: Control,
-      description: "Este es el texto de Control prenatal",
+      description:
+        "El control prenatal es fundamental para garantizar un embarazo saludable y sin complicaciones. Su objetivo principal es vigilar el crecimiento del feto y detectar cualquier señal de riesgo para la madre o el bebé. ",
     },
     {
       id: 2,
       title: "Ultrasonido de primer trimestre",
       Icon: Ultrasonido1,
-      description: "Este es el texto de Ultrasonido de primer trimestre",
+      description:
+        "El ultrasonido del 1er trimestre es un examen médico crucial que se realiza entre las 6 y 14 semanas de embarazo. Esta prueba no invasiva utiliza ondas sonoras de alta frecuencia para crear imágenes detalladas del feto en desarrollo. Después del examen, el médico revisará los resultados y discutirá cualquier hallazgo anormal. Si se detectan problemas, se programarán ulteriores pruebas y seguimiento.",
     },
     {
       id: 3,
       title: "Ultrasonido de segundo trimestre",
       Icon: Ultrasonido2,
-      description: "Este es el texto de Ultrasonido de segundo trimestre",
+      description:
+        "El ultrasonido del 2do trimestre es un examen médico fundamental que se realiza entre las 16 y 22 semanas de embarazo. Este estudio detallado permite evaluar el desarrollo fetal, detectar posibles anomalías y determinar la salud general del bebé. Recuerda que cada embarazo es único, y es importante consultar con un profesional de la salud para obtener orientación personalizada. ",
     },
     {
       id: 4,
       title: "Ultrasonido de tercer trimestre",
       Icon: Ultrasonido3,
-      description: "Este es el texto de Ultrasonido de tercer trimestre ",
+      description:
+        "A medida que se acerca el momento del parto, es fundamental asegurarse de que todo esté listo para el llegada del bebé. El ultrasonido del tercer trimestre, realizado entre las 28 y 40 semanas de embarazo, es una herramienta crucial para evaluar el crecimiento y desarrollo fetal en las etapas finales del embarazo. ",
     },
     {
       id: 5,
       title: "Ultrasonido 3D y 4D",
       Icon: Ultrasonido4,
-      description: "Este es el texto de Ultrasonido 3D y 4D ",
+      description:
+        "Los ultrasonidos 3D y 4D son tecnologías avanzadas que permiten visualizar al feto en tres y cuatro dimensiones, respectivamente. Estos exámenes médicos ofrecen una visión detallada y realista del desarrollo fetal, permitiendo a los padres y médicos obtener información precisa y emocionante sobre el bebé.",
     },
     {
       id: 6,
       title: "Duo Test",
       Icon: DuoTest,
-      description: "Este es el texto de Duo Test ",
+      description:
+        "El Dueto Test es un examen prenatal no invasivo que se realiza entre las 10 y 14 semanas de embarazo. Este test combina la prueba de sangre materna con el ultrasonido para detectar posibles anomalías cromosómicas y trastornos genéticos en el feto. ",
     },
     {
       id: 7,
       title: "DNA fetal",
       Icon: DnaTest,
-      description: "Este es el texto de DNA fetal",
+      description:
+        "Este es un avance den la medicina prenatal, el análisis del ADN fetal es una prueba no invasiva que se realiza durante el embarazo para detectar posibles anomalías genéticas en el feto. Esta prueba analiza el ADN fetal presente en la sangre materna. ",
     },
     {
       id: 8,
       title: "Biopsia de vellosidades coriales",
       Icon: Biopsia,
-      description: "Este es el texto de Biopsia de vellosidades coriales",
+      description:
+        "La biopsia de vellosidades coriales (BVC) es un procedimiento médico que consiste en la extracción y análisis de una pequeña muestra de tejido del corion, una estructura que rodea al feto durante el embarazo. Existen dos tipos de BVC ,  la transcervical y la transabdominal.",
     },
     {
       id: 9,
       title: "Amniocentesis",
       Icon: Embarazo2,
-      description: "Este es el texto de Amniocentesis",
+      description:
+        "La amniocentesis es un procedimiento médico que consiste en la extracción de una muestra de líquido amniótico, el fluido que rodea al feto durante el embarazo. Este procedimiento se realiza para detectar posibles anomalías genéticas, cromosómicas y congénitas en el feto.",
     },
     {
       id: 10,
       title: "Parto/ Cesárea",
       Icon: Parto,
-      description: "Este es el texto de Parto/ Cesárea ",
+      description:
+        "El parto y la cesárea son las dos formas principales de dar a luz. La elección entre una y otra depende de varios factores, incluyendo la salud de la madre y el bebé, la posición del feto y las preferencias personales.",
     },
     {
       id: 11,
       title: "Perfil biofísico",
       Icon: Perfil,
-      description: "Este es el texto de Perfil biofísico ",
+      description:
+        "El perfil biofísico fetal es un examen médico que evalúa el bienestar y la salud del feto durante el embarazo. Este examen combina la evaluación de cinco parámetros fundamentales para determinar el estado de salud del feto. ",
     },
   ];
   const GINECOLOGIA = [
@@ -116,31 +128,36 @@ export const ServicesAll = () => {
       id: 0,
       title: "Check up",
       Icon: Lista,
-      description: "Este es el texto de Check up",
+      description:
+        "El check-up ginecológico es un examen médico rutinario que se realiza para evaluar la salud reproductiva y general de las mujeres. Este examen es fundamental para: *Prevenir enfermedades ginecológicas: *Detectar problemas de salud temprano, *Proporcionar educación y consejos sobre salud reproductiva, *Mantener una buena salud general",
     },
     {
       id: 1,
       title: "Consulta Ginecológica",
       Icon: Consulta,
-      description: "Este es el texto de Consulta Ginecológica",
+      description:
+        "Una consulta ginecológica es un encuentro médico entre una mujer y su ginecólogo, donde se abordan temas relacionados con la salud reproductiva y general. Este espacio es fundamental para: *Evaluar la salud reproductiva: *Prevenir enfermedades ginecológicas, *Detectar problemas de salud temprano, *Proporcionar educación y consejos sobre salud reproductiva.",
     },
     {
       id: 2,
       title: "Papanicolaou",
       Icon: Papanicolau,
-      description: "Este es el texto de Papanicolaou",
+      description:
+        "La prueba de Papanicolaou (PAP) es un examen médico que detecta células anormales en el cuello uterino para prevenir y diagnosticar el cáncer cervical. Se realiza recolectando células del cuello uterino con un hisopo y analizandolas en un laboratorio. La frecuencia de la prueba varía según la edad y factores de riesgo. Las mujeres de 21 a 29 años deben realizarse la prueba cada 3 años, mientras que las de 30 a 65 años cada 3-5 años. Aquellas con factores de riesgo deben hacerlo anualmente.",
     },
     {
       id: 3,
       title: "Colposcopia",
       Icon: Colposcopia,
-      description: "Este es el texto de Colposcopia",
+      description:
+        "La colposcopia es un examen médico que utiliza un instrumento llamado colposcopio para evaluar la salud del cuello uterino (cervix) y detectar posibles lesiones o anomalías. Este examen se realiza después de un resultado anormal en la prueba de Papanicolaou (PAP) o si se sospecha cáncer cervical.",
     },
     {
       id: 4,
       title: "Vacuna contra el VPH",
       Icon: Vacuna,
-      description: "Este es el texto de Vacuna VPH",
+      description:
+        "La vacuna VPH es una vacuna que protege contra el virus del papiloma humano (VPH), que es la causa principal del cáncer cervical, así como de otros cánceres y lesiones precancerosas. La vacuna VPH es una herramienta importante para prevenir el cáncer cervical y otros cánceres relacionados con el VPH. Es importante seguir las recomendaciones de vacunación y consultar con un médico o profesional de la salud para obtener más información. ",
     },
   ];
   return (

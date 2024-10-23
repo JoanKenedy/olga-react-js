@@ -40,7 +40,8 @@ export const Hero = () => {
               Con una extensa gama de servicios , que tengo para tí y tu bebé.
             </p>
             <a
-              href=""
+              href="https://api.whatsapp.com/send?phone=525575791467"
+              target="_blank"
               className="color-btn w-[120px]  text-white rounded-2xl text-sm px-3 py-2 inline-block my-3 md:w-[180px] text-center md:py-3 md:text-lg md:hover:scale-95 duration-75"
             >
               Contacto

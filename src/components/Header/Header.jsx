@@ -32,7 +32,7 @@ export const Header = () => {
       <nav className="bg-white h-auto relative">
         <div className="container-nav flex flex-row justify-between w-11/12 max-w-7xl m-auto  items-center  ">
           <a className="logo-header" href="/">
-            <img src={Logo} alt="" className="w-40 md:w-48" />
+            <img src={Logo} alt="" className="w-44 md:w-56" />
           </a>
           <div
             className={`${

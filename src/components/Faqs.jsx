@@ -41,7 +41,7 @@ export const Faqs = () => {
   return (
     <>
       <section className="w-full">
-        <div className="container-section-faqs px-4 md:max-w-7xl md:m-auto">
+        <div className="container-section-faqs px-4 py-4 md:max-w-7xl md:m-auto">
           <h2 className=" font-semibold text-2xl md:text-4xl">
             Preguntas Frecuentes
           </h2>
@@ -58,7 +58,7 @@ export const Faqs = () => {
                 {PREGUNTAS.map((item, i) => (
                   <div className="w-full">
                     <div
-                      className="flex w-full justify-between items-center text-sm md:text-base cursor-pointer bg-rose-300  item-history p-3 rounded-lg"
+                      className="flex w-full question  justify-between items-center text-sm md:text-base cursor-pointer  p-3 rounded-lg"
                       onClick={() => toogle(i)}
                     >
                       <p className="text-black">{item.pregunta}</p>

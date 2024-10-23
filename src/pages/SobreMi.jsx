@@ -3,6 +3,7 @@ import { AboutIndex } from "../components/Home/AboutIndex";
 import { Experiencia } from "../components/SobreMi/Experiencia";
 import { LineTime } from "../components/SobreMi/LineTime";
 import { CallToAction } from "../components/CallToAction";
+import { Faqs } from "../components/Faqs";
 
 export const SobreMi = () => {
   return (
@@ -11,6 +12,7 @@ export const SobreMi = () => {
       <AboutIndex />
       <LineTime />
       <Experiencia />
+      <Faqs />
       <CallToAction />
     </>
   );
