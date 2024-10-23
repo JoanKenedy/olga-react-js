@@ -13,6 +13,7 @@ import Colposcopia from "../../assets/colposcopio.png";
 import Vacuna from "../../assets/vacuna.png";
 import { FiPlusCircle } from "react-icons/fi";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Services = () => {
   const [openDrow, setIsOpenDrow] = useState(false);
@@ -138,17 +139,19 @@ export const Services = () => {
                 openDrow ? "block" : "hidden"
               } item-title-services md:block `}
             >
-              <ul className="grid grid-cols-2 md:grid-cols-3  place-items-center w-full md:p-3 md:gap-2 ">
-                {MATERNO.map((serv, i) => (
-                  <li
-                    key={i}
-                    className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full  md:border-2 md: border-slate-200 md:rounded-lg md:hover:scale-95 md:duration-150"
-                  >
-                    <img src={serv.Icon} alt="" className="w-[50px]" />
-                    <h3 className="text-xs text-center">{serv.title}</h3>
-                  </li>
-                ))}
-              </ul>
+              <Link to="/servicios">
+                <ul className="grid grid-cols-2 md:grid-cols-3  place-items-center w-full md:p-3 md:gap-2 ">
+                  {MATERNO.map((serv, i) => (
+                    <li
+                      key={i}
+                      className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full  md:border-2 md: border-slate-200 md:rounded-lg md:hover:scale-95 md:duration-150"
+                    >
+                      <img src={serv.Icon} alt="" className="w-[50px]" />
+                      <h3 className="text-xs text-center">{serv.title}</h3>
+                    </li>
+                  ))}
+                </ul>
+              </Link>
             </div>
           </div>
           <div className="services-item">
@@ -172,17 +175,19 @@ export const Services = () => {
                 openDrow2 ? "block" : "hidden"
               } item-title-services md:block `}
             >
-              <ul className=" grid grid-cols-2 place-items-center w-full md:grid-cols-3 md:p-3 md:gap-2">
-                {GINECOLOGIA.map((serv, i) => (
-                  <li
-                    key={i}
-                    className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full md:border-2 md:border-slate-200 md:rounded-lg md:hover:scale-95 md:duration-150"
-                  >
-                    <img src={serv.Icon} alt="" className="w-[50px]" />
-                    <h3 className="text-xs text-center">{serv.title}</h3>
-                  </li>
-                ))}
-              </ul>
+              <Link to="/servicios">
+                <ul className=" grid grid-cols-2 place-items-center w-full md:grid-cols-3 md:p-3 md:gap-2">
+                  {GINECOLOGIA.map((serv, i) => (
+                    <li
+                      key={i}
+                      className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full md:border-2 md:border-slate-200 md:rounded-lg md:hover:scale-95 md:duration-150"
+                    >
+                      <img src={serv.Icon} alt="" className="w-[50px]" />
+                      <h3 className="text-xs text-center">{serv.title}</h3>
+                    </li>
+                  ))}
+                </ul>
+              </Link>
             </div>
           </div>
         </article>

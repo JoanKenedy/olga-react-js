@@ -26,9 +26,12 @@ export const ServicesAll = () => {
   const [openDrow2, setIsOpenDrow2] = useState(false);
   const [activo, setActivo] = useState(false);
   const [id, setId] = useState(" ");
-  const handleActivo = (id) => {
+  const [title, setTitle] = useState("");
+  const handleActivo = (id, title) => {
     setActivo(true);
     setId(id);
+    setTitle(title);
+    console.log(id, title);
   };
   const handleEstado = (nuevoEstado) => {
     setActivo(nuevoEstado);
@@ -39,85 +42,73 @@ export const ServicesAll = () => {
       id: 0,
       title: "Embarazo de alto riesgo",
       Icon: Embarazo,
-      description:
-        "Creamos materiales atractivos que conecten con tus pacientes.",
+      description: "Este es el texto de Embarazo de alto riesgo",
     },
     {
       id: 1,
       title: "Control prenatal",
       Icon: Control,
-      description:
-        "Optimizamos tu contenido para atraer y retener a tus visitantes.",
+      description: "Este es el texto de Control prenatal",
     },
     {
       id: 2,
       title: "Ultrasonido de primer trimestre",
       Icon: Ultrasonido1,
-      description:
-        "Videos impactantes para promocionar tus servicios dentales.",
+      description: "Este es el texto de Ultrasonido de primer trimestre",
     },
     {
       id: 3,
       title: "Ultrasonido de segundo trimestre",
       Icon: Ultrasonido2,
-      description:
-        "Maximizamos el alcance y la efectividad de tus campañas publicitarias.",
+      description: "Este es el texto de Ultrasonido de segundo trimestre",
     },
     {
       id: 4,
       title: "Ultrasonido de tercer trimestre",
       Icon: Ultrasonido3,
-      description:
-        "Diseñamos sitios web profesionales y fáciles de usar para tu clínica.",
+      description: "Este es el texto de Ultrasonido de tercer trimestre ",
     },
     {
       id: 5,
       title: "Ultrasonido 3D y 4D",
       Icon: Ultrasonido4,
-      description:
-        "Mejora tu visibilidad online y atrae más pacientes con un perfil optimizado.",
+      description: "Este es el texto de Ultrasonido 3D y 4D ",
     },
     {
       id: 6,
       title: "Duo Test",
       Icon: DuoTest,
-      description:
-        "Mejora tu visibilidad online y atrae más pacientes con un perfil optimizado.",
+      description: "Este es el texto de Duo Test ",
     },
     {
       id: 7,
       title: "DNA fetal",
       Icon: DnaTest,
-      description:
-        "Mejora tu visibilidad online y atrae más pacientes con un perfil optimizado.",
+      description: "Este es el texto de DNA fetal",
     },
     {
       id: 8,
       title: "Biopsia de vellosidades coriales",
       Icon: Biopsia,
-      description:
-        "Mejora tu visibilidad online y atrae más pacientes con un perfil optimizado.",
+      description: "Este es el texto de Biopsia de vellosidades coriales",
     },
     {
       id: 9,
       title: "Amniocentesis",
       Icon: Embarazo2,
-      description:
-        "Mejora tu visibilidad online y atrae más pacientes con un perfil optimizado.",
+      description: "Este es el texto de Amniocentesis",
     },
     {
       id: 10,
       title: "Parto/ Cesárea",
       Icon: Parto,
-      description:
-        "Mejora tu visibilidad online y atrae más pacientes con un perfil optimizado.",
+      description: "Este es el texto de Parto/ Cesárea ",
     },
     {
       id: 11,
       title: "Perfil biofísico",
       Icon: Perfil,
-      description:
-        "Mejora tu visibilidad online y atrae más pacientes con un perfil optimizado.",
+      description: "Este es el texto de Perfil biofísico ",
     },
   ];
   const GINECOLOGIA = [
@@ -125,36 +116,31 @@ export const ServicesAll = () => {
       id: 0,
       title: "Check up",
       Icon: Lista,
-      description:
-        "Creamos materiales atractivos que conecten con tus pacientes.",
+      description: "Este es el texto de Check up",
     },
     {
       id: 1,
       title: "Consulta Ginecológica",
       Icon: Consulta,
-      description:
-        "Optimizamos tu contenido para atraer y retener a tus visitantes.",
+      description: "Este es el texto de Consulta Ginecológica",
     },
     {
       id: 2,
       title: "Papanicolaou",
       Icon: Papanicolau,
-      description:
-        "Videos impactantes para promocionar tus servicios dentales.",
+      description: "Este es el texto de Papanicolaou",
     },
     {
       id: 3,
       title: "Colposcopia",
       Icon: Colposcopia,
-      description:
-        "Maximizamos el alcance y la efectividad de tus campañas publicitarias.",
+      description: "Este es el texto de Colposcopia",
     },
     {
       id: 4,
       title: "Vacuna contra el VPH",
       Icon: Vacuna,
-      description:
-        "Diseñamos sitios web profesionales y fáciles de usar para tu clínica.",
+      description: "Este es el texto de Vacuna VPH",
     },
   ];
   return (
@@ -202,30 +188,26 @@ export const ServicesAll = () => {
                   {MATERNO.map((serv, i) => (
                     <li
                       key={i}
-                      onClick={(e) => handleActivo(e.target.id)}
+                      onClick={(e) => handleActivo(e.target.id, e.target.title)}
                       id={serv.id}
+                      title="MATERNO"
                       className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full  md:border-2 md: border-slate-200 bg-white md:rounded-lg md:hover:scale-95 md:duration-150 md:gap-3"
                     >
                       <img
                         src={serv.Icon}
-                        alt=""
                         className="w-[50px] md:w-[60px]"
                         id={serv.id}
+                        title="MATERNO"
                       />
                       <h3
                         className="text-xs text-center md:text-sm "
                         id={serv.id}
+                        title="MATERNO"
                       >
                         {serv.title}
                       </h3>
                     </li>
                   ))}
-                  <Modales
-                    activo={activo}
-                    handleEstado={handleEstado}
-                    id={id}
-                    MATERNO={[MATERNO]}
-                  />
                 </ul>
               </div>
             </div>
@@ -254,14 +236,23 @@ export const ServicesAll = () => {
                   {GINECOLOGIA.map((serv, i) => (
                     <li
                       key={i}
+                      onClick={(e) => handleActivo(e.target.id, e.target.title)}
+                      id={serv.id}
+                      title="GINECOLOGIA"
                       className="item-agenda flex flex-col justify-center items-center p-4 md:h-[150px] md:w-full md:border-2 md:border-slate-200 bg-white md:rounded-lg md:hover:scale-95 md:duration-150 md:gap-2"
                     >
                       <img
                         src={serv.Icon}
                         alt=""
                         className="w-[50px] md:w-[55px]"
+                        id={serv.id}
+                        title="GINECOLOGIA"
                       />
-                      <h3 className="text-xs text-center md:text-sm">
+                      <h3
+                        className="text-xs text-center md:text-sm"
+                        id={serv.id}
+                        title="GINECOLOGIA"
+                      >
                         {serv.title}
                       </h3>
                     </li>
@@ -270,6 +261,14 @@ export const ServicesAll = () => {
               </div>
             </div>
           </article>
+          <Modales
+            activo={activo}
+            handleEstado={handleEstado}
+            id={id}
+            title={title}
+            MATERNO={[MATERNO]}
+            GINECOLOGIA={[GINECOLOGIA]}
+          />
         </div>
       </section>
     </>
