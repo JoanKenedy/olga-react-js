@@ -4,7 +4,6 @@ import Img3 from "../../assets/promo-3.jpg";
 import Img4 from "../../assets/promo-4.jpg";
 import Img5 from "../../assets/promo-5.jpg";
 import Img6 from "../../assets/promo-6.jpg";
-import Img7 from "../../assets/promo-7.jpg";
 
 export const dataTestimonials = [
   {
@@ -54,13 +53,5 @@ export const dataTestimonials = [
     testimonial:
       "El apoyo de todo su equipo de Dentarios ha sido increíble , gracias al equipo de Programación, Social Media y Diseño por su completa dedicación a Dental Sonrix.",
     image: Img6,
-  },
-  {
-    id: 7,
-    name: "Dra. Sara Ortiz",
-    work: "Dental Valley",
-    testimonial:
-      "Dentarios me ayudó a incrementar mis pacientes mes con mes, debo decirles que es un trabajo en conjunto entre agencia y clínica, entonces esa sinergia que hicimos fue genial, y estoy super agradecida , los recomiendo completamente.",
-    image: Img7,
   },
 ];

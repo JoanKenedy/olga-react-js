@@ -13,18 +13,18 @@ export const Header = () => {
     },
     {
       id: 2,
-      name: "Sobre mí",
-      link: "/sobre-mi",
-    },
-    {
-      id: 3,
       name: "Servicios",
       link: "/servicios",
     },
     {
-      id: 4,
+      id: 3,
       name: "Promociones",
       link: "#promociones",
+    },
+    {
+      id: 4,
+      name: "Sobre mí",
+      link: "/sobre-mi",
     },
   ];
   return (
@@ -37,7 +37,7 @@ export const Header = () => {
           <div
             className={`${
               isOpenMenu ? "left-0" : "-left-full"
-            } submenu absolute top-0  w-full h-screen z-50 duration-700 md:left-auto md:bg-transparent md:h-auto md:w-auto md:relative  `}
+            } submenu absolute  top-0  w-full h-screen z-50 duration-700 md:left-auto md:bg-transparent md:h-auto md:w-auto md:relative  `}
           >
             <ul className="flex justify-center items-center flex-col md:flex-row">
               <RiCloseLargeLine

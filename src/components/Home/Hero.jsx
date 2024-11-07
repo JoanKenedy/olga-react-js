@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Back from "../../assets/bg-principal.png";
 import BackCel from "../../assets/back-cel.png";
 
@@ -39,13 +40,12 @@ export const Hero = () => {
             Ofrezco servicios de medicina materno fetal y ginecología de alta
             calidad, comprometidos con tu salud y bienestar.
           </p>
-          <a
-            href="https://api.whatsapp.com/send?phone=525575791467"
-            target="_blank"
+          <Link
+            to="/servicios"
             className="btn-header w-[150px]  text-white rounded-2xl text-sm px-3 py-2 inline-block my-3 md:w-[180px] text-center md:py-3 md:text-lg md:hover:scale-95 duration-75"
           >
             Servicios
-          </a>
+          </Link>
         </div>
         <div className="item-hero-inicio hidden md:block"></div>
       </div>
