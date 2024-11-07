@@ -355,9 +355,9 @@ h1 {
   background: #af7768 !important; /* Cambia el color aquí */
 }
 
- .swiper-pagination-bullets.swiper-pagination-horizontal{
-  top: -20px;
- }
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: -18px;
+}
 @media (min-width: 375px) {
   .item-hero-inicio {
     position: absolute;
