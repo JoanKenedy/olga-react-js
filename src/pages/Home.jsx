@@ -9,6 +9,7 @@ import { Clientes } from "../components/Home/Clientes";
 import { Services } from "../components/Home/Services";
 import { Testimonials } from "../components/Home/Testimonials";
 import { Ultrasonidos } from "../components/Home/Ultrasonidos";
+import { ButtonFixed } from "../components/ButtonFixed";
 
 export const Home = () => {
   return (
@@ -23,6 +24,7 @@ export const Home = () => {
       <Galery />
       <Clientes />
       <CallToAction />
+      <ButtonFixed />
     </>
   );
 };

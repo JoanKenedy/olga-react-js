@@ -4,6 +4,7 @@ import ScrollTop from "../components/ScrollTop";
 import { Hero } from "../components/Servicios/Hero";
 import { ServicesAll } from "../components/Servicios/ServicesAll";
 import { Testimonials } from "../components/Home/Testimonials";
+import { ButtonFixed } from "../components/ButtonFixed";
 
 export const Servicios = () => {
   return (
@@ -14,6 +15,7 @@ export const Servicios = () => {
       <Testimonials />
       <Faqs />
       <CallToAction />
+      <ButtonFixed />
     </>
   );
 };

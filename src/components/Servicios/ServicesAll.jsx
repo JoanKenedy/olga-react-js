@@ -31,11 +31,108 @@ export const ServicesAll = () => {
     setActivo(true);
     setId(id);
     setTitle(title);
-    console.log(id, title);
   };
   const handleEstado = (nuevoEstado) => {
     setActivo(nuevoEstado);
   };
+
+  const descripcion = (
+    <div>
+      <h2 className="font-semibold text-black ">
+        Servicio de Ultrasonidos por Trimestre y Perfil Biofísico
+      </h2>
+      <p className="text-xs md:text-sm">
+        Nuestro centro ofrece una gama completa de servicios de ultrasonidos
+        especializados en cada trimestre del embarazo, así como perfil
+        biofísico, para garantizar un seguimiento exhaustivo y seguro del
+        desarrollo fetal.
+      </p>
+      <h3 className="font-semibold text-black ">
+        1er Trimestre (Semanas 1-12)
+      </h3>
+      <ul className="list-disc pl-5 text-xs md:text-sm">
+        <li>
+          Ultrasonido transvaginal o abdominal para confirmar el embarazo y
+          verificar el crecimiento fetal.
+        </li>
+        <li>
+          Evaluación del desarrollo embrionario y detección de posibles
+          anomalías.
+        </li>
+        <li>Determinación de la edad gestacional y fecha probable de parto.</li>
+      </ul>
+      <h3 className="font-semibold text-black ">
+        2do Trimestre (Semanas 13-26)
+      </h3>
+      <ul className="list-disc pl-5 text-xs md:text-sm">
+        <li>
+          Ultrasonido morfológico detallado para evaluar el crecimiento y
+          desarrollo fetal.
+        </li>
+        <li>Evaluación de los órganos y estructuras fetales.</li>
+        <li>Detección de posibles anomalías cromosómicas y congénitas.</li>
+        <li>Determinación del sexo del bebé.</li>
+      </ul>
+
+      <h3 className="font-semibold text-black ">
+        3er Trimestre (Semanas 27-40)
+      </h3>
+      <ul className="list-disc pl-5 text-xs md:text-sm">
+        <li>
+          Ultrasonido de crecimiento fetal para monitorear el desarrollo y
+          crecimiento del bebé.
+        </li>
+        <li>Evaluación de la posición fetal y preparación para el parto.</li>
+      </ul>
+
+      <h3 className="font-semibold text-black ">Perfil Biofísico</h3>
+      <p className="text-xs md:text-sm">
+        Evaluación del bienestar fetal a través de 5 parámetros: 1. Movimiento
+        fetal 2. Tono fetal 3. Respiración fetal 4. Movimiento cardíaco fetal 5.
+        Liquido amniótico
+      </p>
+    </div>
+  );
+  const estudiosEspecializados = (
+    <div>
+      <p className="text-xs md:text-sm">
+        Nuestro centro ofrece una gama completa de estudios especializados,
+        estos te ayudan a evaluar la salud de la madre y el feto durante el
+        embarazo
+      </p>
+      <h3 className="font-semibold text-black ">Duo test</h3>
+      <ul className="list-disc pl-5 text-xs md:text-sm">
+        <li>Se realiza entre las 10-14 semanas</li>
+        <li>Evalúa riesgo de síndrome de Down, Edwards y Patau</li>
+        <li>Combina ultrasonido y análisis de sangre materna</li>
+      </ul>
+      <h3 className="font-semibold text-black ">DNA Fetal</h3>
+      <ul className="list-disc pl-5 text-xs md:text-sm">
+        <li>Se hace después de 10 semanas.</li>
+        <li>Analiza ADN fetal en sangre materna</li>
+        <li>Evalúa riesgo de síndrome de Down, Edwards y Patau</li>
+      </ul>
+
+      <h3 className="font-semibold text-black ">
+        Biopsia de Vellosidades Coriales
+      </h3>
+      <ul className="list-disc pl-5 text-xs md:text-sm">
+        <li>Entre 10-12 semanas</li>
+        <li>Extrae tejido placentario</li>
+        <li>Evalúa anomalías cromosómicas y enfermedades genéticas</li>
+      </ul>
+
+      <h3 className="font-semibold text-black "> Amniocentesis</h3>
+      <ul className="list-disc pl-5 text-xs md:text-sm">
+        <li>Después de 15 semanas</li>
+        <li>Extrae líquido amniótico</li>
+        <li>
+          Evalúa anomalías cromosómicas, enfermedades genéticas y desarrollo
+          fetal.
+        </li>
+      </ul>
+    </div>
+  );
 
   const MATERNO = [
     {
@@ -56,16 +153,14 @@ export const ServicesAll = () => {
       id: 2,
       title: "Ultrasonidos",
       Icon: Ultrasonido1,
-      description:
-        "El ultrasonido del 1er trimestre es un examen médico crucial que se realiza entre las 6 y 14 semanas de embarazo. Esta prueba no invasiva utiliza ondas sonoras de alta frecuencia para crear imágenes detalladas del feto en desarrollo. Después del examen, el médico revisará los resultados y discutirá cualquier hallazgo anormal. Si se detectan problemas, se programarán ulteriores pruebas y seguimiento.",
+      description: descripcion,
     },
 
     {
       id: 6,
       title: "Estudios especializados",
       Icon: DuoTest,
-      description:
-        "El Dueto Test es un examen prenatal no invasivo que se realiza entre las 10 y 14 semanas de embarazo. Este test combina la prueba de sangre materna con el ultrasonido para detectar posibles anomalías cromosómicas y trastornos genéticos en el feto. ",
+      description: estudiosEspecializados,
     },
 
     {

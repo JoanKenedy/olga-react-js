@@ -30,7 +30,7 @@ export const Modales = ({
           className="text-white absolute right-2 top-2 text-2xl"
           onClick={handleClick}
         />
-        <div className="bg-white w-[90%] h-[85%] m-auto md:w-[45%] md:h-[75%] rounded-lg flex flex-col gap-2 justify-center items-center">
+        <div className="bg-white w-[90%] h-[92%] m-auto md:w-[55%] md:h-[90%] rounded-lg flex flex-col gap-2 justify-center items-center">
           {title == "MATERNO"
             ? MATERNO[0]
                 .filter((dato) => dato.id == id)

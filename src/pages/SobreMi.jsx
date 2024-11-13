@@ -7,6 +7,7 @@ import { Faqs } from "../components/Faqs";
 import { About } from "../components/SobreMi/About";
 import ScrollTop from "../components/ScrollTop";
 import { Testimonials } from "../components/Home/Testimonials";
+import { ButtonFixed } from "../components/ButtonFixed";
 
 export const SobreMi = () => {
   return (
@@ -19,6 +20,7 @@ export const SobreMi = () => {
       <Testimonials />
       <Faqs />
       <CallToAction />
+      <ButtonFixed />
     </>
   );
 };

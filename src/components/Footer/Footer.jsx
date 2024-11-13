@@ -1,7 +1,7 @@
 import Logo from "../../assets/logo_header.png";
-import { FaFacebook } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
-import { FaTiktok } from "react-icons/fa";
+import { FaUserDoctor } from "react-icons/fa6";
+
+import { IoLogoWhatsapp } from "react-icons/io";
 
 export const Footer = () => {
   const Company = [
@@ -96,19 +96,22 @@ export const Footer = () => {
               calidez y profesionalismo.
             </p>
             <div className="link-redes-foote flex gap-3">
-              <a href="">
-                <FaFacebook className="text-xl color-text" />
+              <a
+                href="https://api.whatsapp.com/send?phone=525564529359"
+                target="_bank"
+              >
+                <IoLogoWhatsapp className="text-xl color-text" />
               </a>
-              <a href="">
-                <RiInstagramFill className="text-xl color-text" />
-              </a>
-              <a href="">
-                <FaTiktok className="text-xl color-text" />
+              <a
+                href="https://www.doctoralia.com.mx/olga-miryam-castillo-ramirez/ginecologo/tlalpan"
+                target="_bank"
+              >
+                <FaUserDoctor className="text-xl color-text" />
               </a>
             </div>
           </div>
-          <div className="item-footer md:flex md:flex-col md:items-center">
-            <h4 className="font-semibold color-text text-sm md:text-base">
+          <div className="item-footer ">
+            <h4 className="font-semibold  color-text text-sm md:text-base">
               Menú
             </h4>
             <ul className="menu-footer flex justify-start flex-col md:gap-3">
@@ -119,7 +122,7 @@ export const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="item-footer md:flex md:flex-col md:items-center">
+          <div className="item-footer ">
             <h4 className="font-semibold color-text text-sm md:text-base">
               Servicios
             </h4>
@@ -131,7 +134,7 @@ export const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="item-footer ml-0 md:flex md:flex-col md:items-center">
+          <div className="item-footer ">
             <h4 className="font-semibold color-text text-sm md:text-base">
               Más servicios
             </h4>
