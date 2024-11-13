@@ -10,7 +10,7 @@ export const CardAgenda = () => {
       Icon: Doctor,
       Title: "Agendar cita",
       text: "El primer paso para una vida plena es agendar consulta",
-      link: "https://api.whatsapp.com/send?phone=525575791467",
+      link: "https://api.whatsapp.com/send?phone=525564529359",
     },
     {
       id: 2,
@@ -24,13 +24,16 @@ export const CardAgenda = () => {
       Icon: Phone,
       Title: "Si tienes dudas contáctanos",
       text: "No lo dudes estamos para servirte y darte la mejor atención",
-      link: "https://api.whatsapp.com/send?phone=525575791467",
+      link: "https://api.whatsapp.com/send?phone=525564529359",
     },
   ];
   return (
     <>
       <article className="w-full  ">
         <div className="container-agenda w-[90%] mx-auto my-8 md:max-w-7xl">
+          <h2 className="color-text font-semibold text-2xl md:text-4xl my-4">
+            Agenda tu cita
+          </h2>
           <ul className="flex flex-col gap-4 md:grid md:grid-cols-3">
             {Agenda.map((el, index) => (
               <Link to={el.link}>

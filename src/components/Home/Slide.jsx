@@ -25,7 +25,7 @@ export function Slide({ dataTestimonials, clienteTestimonials }) {
         clickable: true,
       }}
       modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-      className="h-full w-full md:max-w-6xl md:mt-4"
+      className="h-full w-full md:max-w-6xl md:mt-4 "
     >
       {dataTestimonials
         ? dataTestimonials.map(({ id, image }) => (
@@ -41,37 +41,39 @@ export function Slide({ dataTestimonials, clienteTestimonials }) {
               </div>
             </SwiperSlide>
           ))
-        : clienteTestimonials.map(({ id, name, work, testimonial, Inicial }) => (
-            <SwiperSlide
-              key={id}
-              className="my-5 cursor-pointer md:px-10 relative bg-slate-50 p-3 rounded-md"
-            >
-              <FaQuoteLeft className="absolute right-7 top-0  text-3xl md:text-4xl text-slate-300 " />
+        : clienteTestimonials.map(
+            ({ id, name, work, testimonial, Inicial }) => (
+              <SwiperSlide
+                key={id}
+                className="my-5 cursor-pointer md:px-10 relativep-3 bg-white py-5 px-3 rounded-md"
+              >
+                <FaQuoteLeft className="absolute right-7 top-0  text-3xl md:text-4xl text-slate-300 " />
 
-              <div className="calificaciones flex">
-                <GiRoundStar className="text-yellow-500 text-xl" />{" "}
-                <GiRoundStar className="text-yellow-500 text-xl" />{" "}
-                <GiRoundStar className="text-yellow-500 text-xl" />{" "}
-                <GiRoundStar className="text-yellow-500 text-xl" />
-                <GiRoundStar className="text-yellow-500 text-xl" />
-              </div>
+                <div className="calificaciones flex">
+                  <GiRoundStar className="text-yellow-500 text-xl" />{" "}
+                  <GiRoundStar className="text-yellow-500 text-xl" />{" "}
+                  <GiRoundStar className="text-yellow-500 text-xl" />{" "}
+                  <GiRoundStar className="text-yellow-500 text-xl" />
+                  <GiRoundStar className="text-yellow-500 text-xl" />
+                </div>
 
-              <div className="my-5 text-sm text-justify">{testimonial}</div>
-              <div className="flex">
-                <div className="flex items-center gap-4">
-                  <div className="circle-img w-[30px] h-[30px] rounded-full bg-red-200 flex justify-center items-center">
-                    {Inicial}
-                  </div>
-                  <div>
-                    <h4 className="text-center text-sm font-semibold">
-                      {name}
-                    </h4>
-                    <p className="text-primaryDark text-xs">{work}</p>
+                <div className="my-5 text-sm text-justify">{testimonial}</div>
+                <div className="flex">
+                  <div className="flex items-center gap-4">
+                    <div className="circle-img w-[30px] h-[30px] rounded-full bg-red-200 flex justify-center items-center text-white">
+                      {Inicial}
+                    </div>
+                    <div>
+                      <h4 className="text-center text-sm font-semibold">
+                        {name}
+                      </h4>
+                      <p className="text-primaryDark text-xs">{work}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
+              </SwiperSlide>
+            )
+          )}
     </Swiper>
   );
 }

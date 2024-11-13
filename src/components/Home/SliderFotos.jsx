@@ -8,12 +8,19 @@ import Img3 from "../../assets/ultrasonidos/3.jpg";
 import Img4 from "../../assets/ultrasonidos/4.jpg";
 import Img5 from "../../assets/ultrasonidos/5.jpg";
 import Img6 from "../../assets/ultrasonidos/6.jpg";
-import Img7 from "../../assets/ultrasonidos/1.jpg";
-import Img8 from "../../assets/ultrasonidos/2.jpg";
-import Img9 from "../../assets/ultrasonidos/3.jpg";
-import Img10 from "../../assets/ultrasonidos/4.jpg";
-import Img11 from "../../assets/ultrasonidos/5.jpg";
-import Img12 from "../../assets/ultrasonidos/6.jpg";
+import Img7 from "../../assets/ultrasonidos/7.jpg";
+import Img8 from "../../assets/ultrasonidos/9.jpg";
+import Img9 from "../../assets/ultrasonidos/10.jpg";
+import Img10 from "../../assets/ultrasonidos/11.jpg";
+import Img11 from "../../assets/ultrasonidos/12.jpg";
+import Img12 from "../../assets/ultrasonidos/13.jpg";
+import Img13 from "../../assets/ultrasonidos/14.jpg";
+import Img14 from "../../assets/ultrasonidos/15.jpg";
+import Img15 from "../../assets/ultrasonidos/16.jpg";
+import Img16 from "../../assets/ultrasonidos/17.jpg";
+import Img17 from "../../assets/ultrasonidos/18.jpg";
+import Img18 from "../../assets/ultrasonidos/19.jpg";
+import Img19 from "../../assets/ultrasonidos/20.jpg";
 
 import { Keyboard, Mousewheel, Navigation, Pagination } from "swiper/modules";
 export const SliderFotos = () => {
@@ -65,6 +72,34 @@ export const SliderFotos = () => {
     {
       id: 12,
       image: Img12,
+    },
+    {
+      id: 13,
+      image: Img13,
+    },
+    {
+      id: 14,
+      image: Img14,
+    },
+    {
+      id: 15,
+      image: Img15,
+    },
+    {
+      id: 16,
+      image: Img16,
+    },
+    {
+      id: 17,
+      image: Img17,
+    },
+    {
+      id: 18,
+      image: Img18,
+    },
+    {
+      id: 19,
+      image: Img19,
     },
   ];
   return (

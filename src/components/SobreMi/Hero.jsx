@@ -39,7 +39,7 @@ export const Hero = () => {
               Con una pasión por brindar atención de calidad a mujeres y bebés.
             </p>
             <a
-              href="https://api.whatsapp.com/send?phone=525575791467"
+              href="https://api.whatsapp.com/send?phone=525564529359"
               target="_blank"
               className="color-btn w-[150px]  text-white rounded-2xl text-sm px-3 py-2 inline-block my-3 md:w-[180px] text-center md:py-3 md:text-lg md:hover:scale-95 duration-75"
             >

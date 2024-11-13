@@ -60,7 +60,7 @@ export const Header = () => {
                 </li>
               ))}
               <a
-                href="https://api.whatsapp.com/send?phone=525575791467"
+                href="https://api.whatsapp.com/send?phone=525564529359"
                 target="_blank"
                 className="btn-header uppercase bg-red-300 mt-12 px-4 py-2 rounded-2xl text-white text-base md:text-base md:hover:scale-95 duration-300 md:mt-0 md:capitalize"
               >

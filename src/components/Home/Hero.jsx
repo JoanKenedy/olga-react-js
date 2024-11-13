@@ -34,7 +34,7 @@ export const Hero = () => {
             Bienvenidos a Medicina Materno Fetal Dra. Olga Castillo
           </h1>
           <h2 className="color-text text-lg font-bold phrase md:text-6xl md:mb-4 ">
-            Cuidamos de ti, cuidamos de tu bebé.
+            Cuido de ti, cuido de tu bebé.
           </h2>
           <p className="text-inicio color-text text-xs text-left md:mb-4 md:leading-7 ">
             Ofrezco servicios de medicina materno fetal y ginecología de alta

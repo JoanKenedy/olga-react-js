@@ -54,73 +54,26 @@ export const ServicesAll = () => {
     },
     {
       id: 2,
-      title: "Ultrasonido de primer trimestre",
+      title: "Ultrasonidos",
       Icon: Ultrasonido1,
       description:
         "El ultrasonido del 1er trimestre es un examen médico crucial que se realiza entre las 6 y 14 semanas de embarazo. Esta prueba no invasiva utiliza ondas sonoras de alta frecuencia para crear imágenes detalladas del feto en desarrollo. Después del examen, el médico revisará los resultados y discutirá cualquier hallazgo anormal. Si se detectan problemas, se programarán ulteriores pruebas y seguimiento.",
     },
-    {
-      id: 3,
-      title: "Ultrasonido de segundo trimestre",
-      Icon: Ultrasonido2,
-      description:
-        "El ultrasonido del 2do trimestre es un examen médico fundamental que se realiza entre las 16 y 22 semanas de embarazo. Este estudio detallado permite evaluar el desarrollo fetal, detectar posibles anomalías y determinar la salud general del bebé. Recuerda que cada embarazo es único, y es importante consultar con un profesional de la salud para obtener orientación personalizada. ",
-    },
-    {
-      id: 4,
-      title: "Ultrasonido de tercer trimestre",
-      Icon: Ultrasonido3,
-      description:
-        "A medida que se acerca el momento del parto, es fundamental asegurarse de que todo esté listo para el llegada del bebé. El ultrasonido del tercer trimestre, realizado entre las 28 y 40 semanas de embarazo, es una herramienta crucial para evaluar el crecimiento y desarrollo fetal en las etapas finales del embarazo. ",
-    },
-    {
-      id: 5,
-      title: "Ultrasonido 3D y 4D",
-      Icon: Ultrasonido4,
-      description:
-        "Los ultrasonidos 3D y 4D son tecnologías avanzadas que permiten visualizar al feto en tres y cuatro dimensiones, respectivamente. Estos exámenes médicos ofrecen una visión detallada y realista del desarrollo fetal, permitiendo a los padres y médicos obtener información precisa y emocionante sobre el bebé.",
-    },
+
     {
       id: 6,
-      title: "Duo Test",
+      title: "Estudios especializados",
       Icon: DuoTest,
       description:
         "El Dueto Test es un examen prenatal no invasivo que se realiza entre las 10 y 14 semanas de embarazo. Este test combina la prueba de sangre materna con el ultrasonido para detectar posibles anomalías cromosómicas y trastornos genéticos en el feto. ",
     },
-    {
-      id: 7,
-      title: "DNA fetal",
-      Icon: DnaTest,
-      description:
-        "Este es un avance den la medicina prenatal, el análisis del ADN fetal es una prueba no invasiva que se realiza durante el embarazo para detectar posibles anomalías genéticas en el feto. Esta prueba analiza el ADN fetal presente en la sangre materna. ",
-    },
-    {
-      id: 8,
-      title: "Biopsia de vellosidades coriales",
-      Icon: Biopsia,
-      description:
-        "La biopsia de vellosidades coriales (BVC) es un procedimiento médico que consiste en la extracción y análisis de una pequeña muestra de tejido del corion, una estructura que rodea al feto durante el embarazo. Existen dos tipos de BVC ,  la transcervical y la transabdominal.",
-    },
-    {
-      id: 9,
-      title: "Amniocentesis",
-      Icon: Embarazo2,
-      description:
-        "La amniocentesis es un procedimiento médico que consiste en la extracción de una muestra de líquido amniótico, el fluido que rodea al feto durante el embarazo. Este procedimiento se realiza para detectar posibles anomalías genéticas, cromosómicas y congénitas en el feto.",
-    },
+
     {
       id: 10,
       title: "Parto/ Cesárea",
       Icon: Parto,
       description:
         "El parto y la cesárea son las dos formas principales de dar a luz. La elección entre una y otra depende de varios factores, incluyendo la salud de la madre y el bebé, la posición del feto y las preferencias personales.",
-    },
-    {
-      id: 11,
-      title: "Perfil biofísico",
-      Icon: Perfil,
-      description:
-        "El perfil biofísico fetal es un examen médico que evalúa el bienestar y la salud del feto durante el embarazo. Este examen combina la evaluación de cinco parámetros fundamentales para determinar el estado de salud del feto. ",
     },
   ];
   const GINECOLOGIA = [
@@ -201,7 +154,7 @@ export const ServicesAll = () => {
                   openDrow ? "efecto2 " : " "
                 } item-title-services respuesta2 `}
               >
-                <ul className="grid grid-cols-2 md:grid-cols-4  place-items-center w-full md:p-3 md:gap-2 ">
+                <ul className="grid grid-cols-2 md:grid-cols-3  place-items-center w-full md:p-3 md:gap-2 ">
                   {MATERNO.map((serv, i) => (
                     <li
                       key={i}

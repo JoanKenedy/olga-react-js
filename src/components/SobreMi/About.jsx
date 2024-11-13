@@ -1,15 +1,14 @@
-import About from "../../assets/about-1.jpg";
+import about from "../../assets/about-1.jpg";
 import Latidos from "../../assets/latidos.png";
 import { BsChatHeartFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
 
-export const AboutIndex = () => {
+export const About = () => {
   return (
     <>
       <div className="about w-full">
         <div className="container-about w-[90%] m-auto flex flex-col gap-4 md:my-12 md:grid md:grid-cols-2 md:max-w-7xl md:gap-10 ">
           <div className="item-about">
-            <img src={About} alt="" className="rounded-lg" />
+            <img src={about} alt="" className="rounded-lg" />
           </div>
           <div className="item-about md:flex md:justify-center md:flex-col ">
             <h2 className="font-bold text-xl md:text-4xl">Sobre mi</h2>
@@ -34,13 +33,20 @@ export const AboutIndex = () => {
                 México "Dr. Eduardo Licéaga", Universidad Nacional Autónoma de
                 México
               </li>
+              <li>
+                Certificada por el Consejo Mexicano de Ginecología y
+                Obstetricia.
+              </li>
+              <li>Certificada por The Fetal Medicine Foundation.</li>
+              <li>
+                Diplomado en Colposcopia y Lesiones del Tracto Genital Inferior.
+                Instituto Blackwell
+              </li>
+              <li>
+                Diplomado en “Administración de Unidades de Salud, enfoque en
+                competencias”
+              </li>
             </ul>
-            <Link
-              to="/sobre-mi"
-              className="btn-header w-[150px]  text-white rounded-2xl text-sm px-3 py-2 inline-block my-3 md:w-[180px] text-center md:py-2 md:text-lg md:hover:scale-95 duration-75"
-            >
-              Saber más
-            </Link>
           </div>
         </div>
       </div>
