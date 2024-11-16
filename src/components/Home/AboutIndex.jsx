@@ -1,4 +1,4 @@
-import About from "../../assets/about-1.jpg";
+import About from "../../assets/foto-olga.png";
 import Latidos from "../../assets/latidos.png";
 import { BsChatHeartFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
@@ -7,9 +7,9 @@ export const AboutIndex = () => {
   return (
     <>
       <div className="about w-full">
-        <div className="container-about w-[90%] m-auto flex flex-col gap-4 md:my-12 md:grid md:grid-cols-2 md:max-w-7xl md:gap-10 ">
-          <div className="item-about">
-            <img src={About} alt="" className="rounded-lg" />
+        <div className="container-about w-[90%] m-auto flex flex-col gap-4 md:mt-14 md:grid md:grid-cols-2 md:max-w-7xl md:gap-10 ">
+          <div className="item-about flex justify-center items-center">
+            <img src={About} alt="" className="rounded-lg w-100 h-[90%]" />
           </div>
           <div className="item-about md:flex md:justify-center md:flex-col ">
             <h2 className="font-bold text-xl md:text-4xl">Sobre mi</h2>

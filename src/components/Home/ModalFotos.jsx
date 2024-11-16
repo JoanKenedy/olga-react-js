@@ -22,11 +22,11 @@ export const ModalFotos = ({ abrirModal, handleEstadoModal }) => {
           className="text-white absolute right-2 top-2 text-2xl"
           onClick={handleClick2}
         />
-        <div className="container-modal bg-white w-[95%] h-[60%] rounded-xl md:w-[70%] md:h-[80%] flex flex-col justify-center items-center">
+        <div className="container-modal bg-white w-[95%] h-[90%] rounded-xl md:w-[70%] md:h-[80%] flex flex-col justify-center items-center">
           <h2 className="color-text font-semibold text-2xl md:text-4xl text-center mt-3">
             Muestra de mi trabajo
           </h2>
-          <SliderFotos/>
+          <SliderFotos />
         </div>
       </div>
     </>
