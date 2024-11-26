@@ -17,8 +17,7 @@ export const AboutIndex = () => {
             <p className="text-sm text-slate-400 font-normal mb-3 md:text-base">
               Con una sonrisa cálida y un corazón dedicado, soy la Dra. Olga
               Castillo, una experta en medicina materno fetal y ginecología con
-              más de 8 años de experiencia en cuidar la salud y bienestar de
-              mujeres y bebés.
+              experiencia en cuidar la salud y bienestar de mujeres y bebés.
             </p>
             <ul className=" list-disc flex flex-col gap-1 pl-4 text-sm  md:text-base ">
               <li className="bold">

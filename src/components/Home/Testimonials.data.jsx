@@ -4,6 +4,7 @@ import Img3 from "../../assets/promo-3.jpg";
 import Img4 from "../../assets/promo-4.jpg";
 import Img5 from "../../assets/promo-5.jpg";
 import Img6 from "../../assets/promo-6.jpg";
+import Img7 from "../../assets/promo-7.jpg";
 
 export const dataTestimonials = [
   {
@@ -53,5 +54,13 @@ export const dataTestimonials = [
     testimonial:
       "El apoyo de todo su equipo de Dentarios ha sido increíble , gracias al equipo de Programación, Social Media y Diseño por su completa dedicación a Dental Sonrix.",
     image: Img6,
+  },
+  {
+    id: 7,
+    name: "Dra. Marisol Atayde",
+    work: "Dental Sonrix",
+    testimonial:
+      "El apoyo de todo su equipo de Dentarios ha sido increíble , gracias al equipo de Programación, Social Media y Diseño por su completa dedicación a Dental Sonrix.",
+    image: Img7,
   },
 ];
