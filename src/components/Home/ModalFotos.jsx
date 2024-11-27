@@ -3,9 +3,12 @@ import "swiper/css/pagination";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { IoClose } from "react-icons/io5";
-import Img1 from "../../assets/ultrasonidos/1-trimestre/1.jpg";
-import Segundo1 from "../../assets/ultrasonidos/2-trimestre/1.jpg";
+import Img1 from "../../assets/ultrasonidos/1-trimestre/16.jpg";
+import Img2 from "../../assets/ultrasonidos/1-trimestre/4.jpg";
+import Segundo1 from "../../assets/ultrasonidos/2-trimestre/17.jpeg";
+import Segundo2 from "../../assets/ultrasonidos/2-trimestre/16.jpeg";
 import Tercer1 from "../../assets/ultrasonidos/3-trimestre/3.jpg";
+import Tercer2 from "../../assets/ultrasonidos/3-trimestre/7.jpg";
 import { Keyboard, Mousewheel, Navigation, Pagination } from "swiper/modules";
 
 export const ModalFotos = ({ abrirModal, handleEstadoModal }) => {
@@ -47,18 +50,21 @@ export const ModalFotos = ({ abrirModal, handleEstadoModal }) => {
   const InfoUltrasonidos = [
     {
       imgSrc: Img1,
+      img2: Img2,
       title:
-        "1er Trimestre (Semanas 1-12) Ultrasonido transvaginal o abdominal",
+        "1er Trimestre (Semanas 11-14) Ultrasonido transvaginal o abdominal",
       Info: E1,
     },
     {
       imgSrc: Segundo1,
-      title: "2do Trimestre (Semanas 13-26)",
+      img2: Segundo2,
+      title: "2do Trimestre (Semanas 18-24)",
       Info: E2,
     },
     {
       imgSrc: Tercer1,
-      title: "3er Trimestre (Semanas 27-40)",
+      img2: Tercer2,
+      title: "3er Trimestre (Semanas 28 en adelante)",
       Info: E3,
     },
   ];
@@ -109,11 +115,18 @@ export const ModalFotos = ({ abrirModal, handleEstadoModal }) => {
                   <h2 className="color-text font-semibold text-center text-base md:text-2xl">
                     {item.title}
                   </h2>
-                  <img
-                    src={item.imgSrc}
-                    alt=""
-                    className="max-w-[200px] m-auto"
-                  />
+                  <div className="flex ">
+                    <img
+                      src={item.imgSrc}
+                      alt=""
+                      className="max-w-[170px] m-auto md:max-w-[230px]"
+                    />
+                    <img
+                      src={item.img2}
+                      alt=""
+                      className="max-w-[170px] m-auto md:max-w-[230px]"
+                    />
+                  </div>
 
                   {item.Info}
                 </SwiperSlide>
